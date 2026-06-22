@@ -7,7 +7,7 @@ export default function Logos() {
     <section className="border-b border-line bg-surface-2 py-9">
       <div className="container-x">
         <p className="mb-[18px] text-center text-[0.85rem] uppercase tracking-[0.12em] text-muted">
-          Powering teams at companies you know
+          Brands we&apos;ve helped grow
         </p>
         <Reveal className="flex flex-wrap justify-center gap-10">
           {companies.map((c) => (

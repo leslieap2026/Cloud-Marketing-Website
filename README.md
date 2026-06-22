@@ -8,36 +8,43 @@ A modern, responsive marketing website for Cloud Marketing LLC, built with
 - [Next.js 15](https://nextjs.org/) — App Router, React Server Components
 - React 19 + TypeScript
 - Tailwind CSS 3 for styling (design tokens in `tailwind.config.ts`)
-- `next/font` for self-hosted Inter
+- `next/font` for self-hosted Poppins (headings), with a Helvetica Neue body stack
 
-## Features
+## Sections
 
-- **Responsive design** — looks great from mobile to desktop
-- **Sticky header** with a collapsible mobile navigation menu (client component)
-- **Hero** with a dashboard-style visual (live metrics + bar chart)
-- **Feature grid**, **solutions**, **pricing**, and **testimonials** sections
-- **Signup form** with client-side validation and friendly feedback
-- Accessible markup (semantic landmarks, ARIA labels, keyboard-friendly nav)
+The page follows a marketing-agency narrative:
+
+1. **Hero** — value proposition + primary call to action, with a campaign-performance visual
+2. **Services** — four outcome-framed offerings
+3. **Results** — social proof: results stats + client testimonials
+4. **About** — founder story and principles
+5. **Process** — a four-step "how it works"
+6. **Primary CTA / Contact** — book-a-call form
+7. **Footer** — contact, socials, and navigation
+
+Other niceties: responsive layout, sticky header with mobile nav, scroll-reveal
+animations (with `prefers-reduced-motion` support), and accessible markup.
 
 ## Project structure
 
 ```
 .
 ├── app/
-│   ├── globals.css      # Tailwind layers + component classes
+│   ├── globals.css      # Tailwind layers, component classes + animations
 │   ├── layout.tsx       # Root layout, fonts, metadata
 │   └── page.tsx         # Home page — composes the sections
 ├── components/
 │   ├── Header.tsx       # "use client" — mobile nav
 │   ├── Hero.tsx
-│   ├── Logos.tsx
+│   ├── Logos.tsx        # client logo strip
 │   ├── SectionHead.tsx
-│   ├── Features.tsx
-│   ├── Solutions.tsx
-│   ├── Pricing.tsx
-│   ├── Testimonials.tsx
-│   ├── CTA.tsx          # "use client" — signup form
-│   └── Footer.tsx
+│   ├── Services.tsx
+│   ├── Testimonials.tsx # results stats + testimonials
+│   ├── Solutions.tsx    # About / founder story
+│   ├── Process.tsx
+│   ├── CTA.tsx          # "use client" — book-a-call form
+│   ├── Footer.tsx
+│   └── Reveal.tsx       # "use client" — scroll-reveal wrapper
 ├── tailwind.config.ts
 ├── next.config.mjs
 └── package.json
@@ -62,7 +69,7 @@ npm run lint     # eslint
 
 - **Colors, fonts, spacing** — extend the theme in `tailwind.config.ts` and the
   component classes in `app/globals.css`.
-- **Content** (copy, pricing, testimonials) lives as typed arrays at the top of
-  each component in `components/`.
+- **Content** (services, testimonials, process steps, etc.) lives as typed
+  arrays at the top of each component in `components/`.
 - **Branding** — replace the inline SVG logo and `Cloud Marketing` text in
   `Header.tsx` / `Footer.tsx`.

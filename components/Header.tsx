@@ -3,10 +3,10 @@
 import { useState } from "react";
 
 const navLinks = [
-  { href: "#features", label: "Features" },
-  { href: "#solutions", label: "Solutions" },
-  { href: "#pricing", label: "Pricing" },
-  { href: "#testimonials", label: "Customers" },
+  { href: "#services", label: "Services" },
+  { href: "#results", label: "Results" },
+  { href: "#about", label: "About" },
+  { href: "#process", label: "Process" },
 ];
 
 export default function Header() {
@@ -45,7 +45,7 @@ export default function Header() {
             </a>
           ))}
           <a href="#contact" className="btn btn-primary btn-sm">
-            Get Started
+            Book a call
           </a>
         </nav>
 
@@ -74,7 +74,7 @@ export default function Header() {
             </a>
           ))}
           <a href="#contact" onClick={close} className="btn btn-primary mt-2">
-            Get Started
+            Book a call
           </a>
         </nav>
       )}

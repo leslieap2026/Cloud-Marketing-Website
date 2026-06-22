@@ -1,10 +1,10 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Logos from "@/components/Logos";
-import Features from "@/components/Features";
-import Solutions from "@/components/Solutions";
-import Pricing from "@/components/Pricing";
+import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
+import Solutions from "@/components/Solutions";
+import Process from "@/components/Process";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 
@@ -15,10 +15,10 @@ export default function Home() {
       <main>
         <Hero />
         <Logos />
-        <Features />
-        <Solutions />
-        <Pricing />
+        <Services />
         <Testimonials />
+        <Solutions />
+        <Process />
         <CTA />
       </main>
       <Footer />

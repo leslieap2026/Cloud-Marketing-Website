@@ -12,7 +12,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Cloud Marketing LLC — Seamless & Easy Marketing",
   description:
-    "Cloud Marketing LLC — scalable, secure cloud infrastructure for modern teams. Compute, storage, and global networking that grows with you.",
+    "Cloud Marketing is a boutique growth-marketing studio that helps growing brands turn attention into revenue — through brand, content, paid advertising, and high-converting websites.",
 };
 
 export default function RootLayout({

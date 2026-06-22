@@ -1,8 +1,8 @@
 const metrics = [
-  { val: "42ms", label: "Latency" },
-  { val: "99.99%", label: "Uptime" },
-  { val: "1.2M", label: "Requests/s" },
-  { val: "18", label: "Regions" },
+  { val: "4.2x", label: "Return on ad spend" },
+  { val: "+62%", label: "Revenue growth" },
+  { val: "318", label: "Leads / month" },
+  { val: "3.1M", label: "People reached" },
 ];
 
 const bars = [40, 65, 50, 80, 70, 95, 60];
@@ -13,39 +13,39 @@ export default function Hero() {
       <div className="container-x grid items-center gap-14 max-[900px]:grid-cols-1 min-[901px]:grid-cols-[1.1fr_0.9fr]">
         {/* Copy */}
         <div className="max-[900px]:order-2">
-          <p className="anim-up eyebrow">Trusted by 12,000+ engineering teams</p>
+          <p className="anim-up eyebrow">A full-service growth marketing studio</p>
           <h1
             className="anim-up mb-3 text-[clamp(2.2rem,5vw,3.6rem)] font-extrabold leading-[1.15] tracking-[-0.02em]"
             style={{ animationDelay: "80ms" }}
           >
-            Cloud infrastructure that scales with your ambition.
+            Marketing that helps growing brands turn attention into revenue.
           </h1>
           <p
-            className="anim-up max-w-[36ch] text-[1.18rem] text-ink-soft"
+            className="anim-up max-w-[42ch] text-[1.18rem] text-ink-soft"
             style={{ animationDelay: "160ms" }}
           >
-            Deploy in seconds, scale to millions. Cloud Marketing gives you compute,
-            storage, and global networking on a platform engineered for speed,
-            security, and predictable pricing.
+            Cloud Marketing is a boutique studio that blends sharp strategy with
+            hands-on execution — so you get campaigns that don&apos;t just look
+            good, they grow your bottom line.
           </p>
           <div
             className="anim-up my-6 flex flex-wrap gap-3.5"
             style={{ animationDelay: "240ms" }}
           >
             <a href="#contact" className="btn btn-primary">
-              Start free trial
+              Book a free strategy call
             </a>
-            <a href="#features" className="btn btn-ghost">
-              Explore features →
+            <a href="#results" className="btn btn-ghost">
+              See the results →
             </a>
           </div>
           <ul
             className="anim-up flex flex-wrap gap-5 text-[0.92rem] text-muted"
             style={{ animationDelay: "320ms" }}
           >
-            <li>✓ No credit card required</li>
-            <li>✓ 99.99% uptime SLA</li>
-            <li>✓ Cancel anytime</li>
+            <li>✓ Free 30-minute call</li>
+            <li>✓ No long-term contracts</li>
+            <li>✓ Senior team, no hand-offs</li>
           </ul>
         </div>
 
@@ -60,7 +60,7 @@ export default function Hero() {
           <div className="relative z-[2] rounded-card border border-line bg-surface p-[22px] shadow-card">
             <div className="flex items-center gap-2 text-[0.92rem] font-semibold text-ink-soft">
               <span className="inline-block h-2.5 w-2.5 rounded-full bg-[#22c55e] shadow-[0_0_0_4px_rgba(34,197,94,0.18)]" />
-              Production cluster — Healthy
+              Live campaign — Performing
             </div>
             <div className="my-[18px] grid grid-cols-2 gap-3">
               {metrics.map((m) => (

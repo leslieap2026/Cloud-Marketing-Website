@@ -16,12 +16,12 @@ export default function CTA() {
 
     if (!name || !emailOk) {
       setStatus("error");
-      setMessage("Please enter your name and a valid work email.");
+      setMessage("Please add your name and a valid email so we can reach you.");
       return;
     }
 
     setStatus("success");
-    setMessage(`Thanks, ${name}! Check ${email} to activate your free account.`);
+    setMessage(`Thanks, ${name}! We'll email ${email} within one business day to set up your call.`);
     form.reset();
   };
 
@@ -29,60 +29,77 @@ export default function CTA() {
     <section id="contact" className="section text-white bg-[linear-gradient(160deg,#2a525e,#1d3a42)]">
       <div className="container-x grid items-center gap-12 max-[900px]:grid-cols-1 min-[901px]:grid-cols-2">
         <Reveal>
+          <p className="eyebrow">Get in touch</p>
           <h2 className="mb-2 text-[clamp(1.7rem,3.5vw,2.6rem)] font-bold tracking-[-0.02em] text-white">
-            Ready to build on Cloud Marketing?
+            Ready to grow your brand?
           </h2>
-          <p className="max-w-[40ch] text-[1.1rem] text-[#aab4d4]">
-            Start your free trial today. Deploy your first app in minutes — no credit card required.
+          <p className="max-w-[42ch] text-[1.1rem] text-[#aab4d4]">
+            Book a free 30-minute strategy call. We&apos;ll talk through your
+            goals and show you exactly how we&apos;d help — no pressure, no jargon.
+          </p>
+          <p className="mt-5 text-[0.95rem] text-[#aab4d4]">
+            Prefer email?{" "}
+            <a href="mailto:hello@cloudmarketing.com" className="text-white underline">
+              hello@cloudmarketing.com
+            </a>
           </p>
         </Reveal>
 
-        <Reveal
-          delay={120}
-          className="rounded-card border border-white/10 bg-white/5 p-7"
-        >
-        <form onSubmit={handleSubmit} noValidate>
-          <div className="mb-3.5">
-            <label htmlFor="name" className="sr-only">
-              Full name
-            </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Full name"
-              required
-              className="w-full rounded-[10px] border border-white/20 bg-white/[0.06] px-4 py-3.5 text-white placeholder:text-[#8b96b8] focus:border-transparent focus:outline focus:outline-2 focus:outline-brand"
-            />
-          </div>
-          <div className="mb-3.5">
-            <label htmlFor="email" className="sr-only">
-              Work email
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Work email"
-              required
-              className="w-full rounded-[10px] border border-white/20 bg-white/[0.06] px-4 py-3.5 text-white placeholder:text-[#8b96b8] focus:border-transparent focus:outline focus:outline-2 focus:outline-brand"
-            />
-          </div>
-          <button type="submit" className="btn btn-primary btn-block">
-            Create free account
-          </button>
-          {message && (
-            <p
-              role="status"
-              aria-live="polite"
-              className={`mt-3 text-[0.9rem] ${
-                status === "success" ? "text-[#4ade80]" : "text-[#f87171]"
-              }`}
-            >
-              {message}
-            </p>
-          )}
-        </form>
+        <Reveal delay={120} className="rounded-card border border-white/10 bg-white/5 p-7">
+          <form onSubmit={handleSubmit} noValidate>
+            <div className="mb-3.5">
+              <label htmlFor="name" className="sr-only">
+                Your name
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+                className="w-full rounded-[10px] border border-white/20 bg-white/[0.06] px-4 py-3.5 text-white placeholder:text-[#8b96b8] focus:border-transparent focus:outline focus:outline-2 focus:outline-brand"
+              />
+            </div>
+            <div className="mb-3.5">
+              <label htmlFor="email" className="sr-only">
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email address"
+                required
+                className="w-full rounded-[10px] border border-white/20 bg-white/[0.06] px-4 py-3.5 text-white placeholder:text-[#8b96b8] focus:border-transparent focus:outline focus:outline-2 focus:outline-brand"
+              />
+            </div>
+            <div className="mb-3.5">
+              <label htmlFor="goal" className="sr-only">
+                What do you need help with?
+              </label>
+              <textarea
+                id="goal"
+                name="goal"
+                rows={3}
+                placeholder="What do you need help with? (optional)"
+                className="w-full resize-none rounded-[10px] border border-white/20 bg-white/[0.06] px-4 py-3.5 text-white placeholder:text-[#8b96b8] focus:border-transparent focus:outline focus:outline-2 focus:outline-brand"
+              />
+            </div>
+            <button type="submit" className="btn btn-primary btn-block">
+              Book my free call
+            </button>
+            {message && (
+              <p
+                role="status"
+                aria-live="polite"
+                className={`mt-3 text-[0.9rem] ${
+                  status === "success" ? "text-[#4ade80]" : "text-[#f87171]"
+                }`}
+              >
+                {message}
+              </p>
+            )}
+          </form>
         </Reveal>
       </div>
     </section>
