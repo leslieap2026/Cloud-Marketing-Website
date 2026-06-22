@@ -9,7 +9,7 @@ const steps = [
   },
   {
     num: "02",
-    title: "Diagnostic & strategy",
+    title: "On-Boarding Process & Proposal",
     body: "We audit where you are today and build a clear, prioritized plan mapped directly to the outcomes you want to hit.",
   },
   {
