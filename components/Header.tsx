@@ -29,7 +29,7 @@ export default function Header() {
             </svg>
           </span>
           <span>
-            Nimbus<span className="text-brand">Cloud</span>
+            Cloud <span className="text-brand">Marketing</span>
           </span>
         </a>
 

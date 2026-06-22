@@ -18,7 +18,7 @@ export default function Hero() {
             Cloud infrastructure that scales with your ambition.
           </h1>
           <p className="max-w-[36ch] text-[1.18rem] text-ink-soft">
-            Deploy in seconds, scale to millions. Nimbus Cloud gives you compute,
+            Deploy in seconds, scale to millions. Cloud Marketing gives you compute,
             storage, and global networking on a platform engineered for speed,
             security, and predictable pricing.
           </p>

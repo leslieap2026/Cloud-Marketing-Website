@@ -1,8 +1,8 @@
 {
-  "name": "nimbus-cloud-website",
+  "name": "cloud-marketing-website",
   "version": "1.0.0",
   "private": true,
-  "description": "Nimbus Cloud — marketing website built with Next.js",
+  "description": "Cloud Marketing LLC — marketing website built with Next.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

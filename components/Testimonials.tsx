@@ -2,7 +2,7 @@ import SectionHead from "./SectionHead";
 
 const quotes = [
   {
-    quote: "We cut our infrastructure costs by 38% and our deploy times went from minutes to seconds. Nimbus just works.",
+    quote: "We cut our infrastructure costs by 38% and our deploy times went from minutes to seconds. Cloud Marketing just works.",
     initials: "AK",
     name: "Aisha Khan",
     role: "CTO, Aperture",

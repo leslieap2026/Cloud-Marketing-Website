@@ -1,8 +1,7 @@
-# Nimbus Cloud — Marketing Website
+# Cloud Marketing LLC — Marketing Website
 
-A modern, responsive marketing website for a fictional cloud infrastructure
-company, built with **Next.js (App Router)**, **React**, **TypeScript**, and
-**Tailwind CSS**.
+A modern, responsive marketing website for Cloud Marketing LLC, built with
+**Next.js (App Router)**, **React**, **TypeScript**, and **Tailwind CSS**.
 
 ## Tech stack
 
@@ -65,5 +64,5 @@ npm run lint     # eslint
   component classes in `app/globals.css`.
 - **Content** (copy, pricing, testimonials) lives as typed arrays at the top of
   each component in `components/`.
-- **Branding** — replace the inline SVG logo and `NimbusCloud` text in
+- **Branding** — replace the inline SVG logo and `Cloud Marketing` text in
   `Header.tsx` / `Footer.tsx`.

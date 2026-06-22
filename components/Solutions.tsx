@@ -22,7 +22,7 @@ export default function Solutions() {
             Built for the way your team works
           </h2>
           <p className="section-sub">
-            From early-stage startups to global enterprises, Nimbus adapts to your stack and your scale.
+            From early-stage startups to global enterprises, Cloud Marketing adapts to your stack and your scale.
           </p>
           <ul className="my-7 grid gap-3.5">
             {items.map((i) => (

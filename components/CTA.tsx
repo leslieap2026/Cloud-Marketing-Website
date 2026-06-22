@@ -29,7 +29,7 @@ export default function CTA() {
       <div className="container-x grid items-center gap-12 max-[900px]:grid-cols-1 min-[901px]:grid-cols-2">
         <div>
           <h2 className="mb-2 text-[clamp(1.7rem,3.5vw,2.6rem)] font-bold tracking-[-0.02em] text-white">
-            Ready to build on Nimbus?
+            Ready to build on Cloud Marketing?
           </h2>
           <p className="max-w-[40ch] text-[1.1rem] text-[#aab4d4]">
             Start your free trial today. Deploy your first app in minutes — no credit card required.
