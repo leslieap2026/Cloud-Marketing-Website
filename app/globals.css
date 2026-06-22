@@ -109,15 +109,15 @@ html {
   }
 }
 
-/* Animated, airy sky-blue hero background */
+/* Animated, soft sky-blue hero background */
 .hero-aurora {
-  background: linear-gradient(120deg, #1366c4, #2390db, #38b9da, #2390db, #1366c4);
+  background: linear-gradient(125deg, #7cc6ff, #90d5ff, #c2ebff, #90d5ff, #7cc6ff);
   background-size: 300% 300%;
   animation: auroraShift 18s ease infinite;
 }
 /* Subtle dot-grid texture overlay */
 .hero-grid {
-  background-image: radial-gradient(rgba(255, 255, 255, 0.22) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(21, 95, 176, 0.12) 1px, transparent 1px);
   background-size: 22px 22px;
   -webkit-mask-image: radial-gradient(120% 90% at 50% 0%, #000 40%, transparent 75%);
   mask-image: radial-gradient(120% 90% at 50% 0%, #000 40%, transparent 75%);
@@ -127,7 +127,7 @@ html {
   display: inline-block;
   margin-left: 1px;
   font-weight: 300;
-  color: #bff4ff;
+  color: #155fb0;
   animation: caretBlink 1s step-end infinite;
 }
 
