@@ -23,6 +23,7 @@ const config: Config = {
       fontFamily: {
         sans: ['"Helvetica Neue"', "Helvetica", "Arial", "sans-serif"],
         heading: ["var(--font-poppins)", "system-ui", "sans-serif"],
+        display: ["var(--font-fraunces)", "Georgia", "serif"],
       },
       maxWidth: {
         container: "1140px",

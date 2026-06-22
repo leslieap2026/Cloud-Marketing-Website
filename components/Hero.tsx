@@ -12,7 +12,7 @@ export default function Hero() {
           Marketing for women-owned CPG brands
         </p>
         <h1
-          className="anim-up mx-auto mb-6 max-w-[18ch] text-[clamp(2.8rem,6.5vw,5rem)] font-extrabold leading-[1.06] tracking-[-0.02em] text-ink"
+          className="anim-up font-display mx-auto mb-6 max-w-[18ch] text-[clamp(2.8rem,6.5vw,5rem)] font-semibold leading-[1.07] tracking-[-0.01em] text-ink"
           style={{ animationDelay: "80ms" }}
         >
           <TypedText text="Your product deserves to be seen." speed={55} />
