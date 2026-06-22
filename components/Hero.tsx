@@ -17,7 +17,7 @@ export default function Hero() {
           <h1 className="mb-3 text-[clamp(2.2rem,5vw,3.6rem)] font-extrabold leading-[1.15] tracking-[-0.02em]">
             Cloud infrastructure that scales with your ambition.
           </h1>
-          <p className="max-w-[36ch] text-[1.18rem] text-ink-soft">
+          <p className="font-subheading max-w-[36ch] text-[1.18rem] text-ink-soft">
             Deploy in seconds, scale to millions. Cloud Marketing gives you compute,
             storage, and global networking on a platform engineered for speed,
             security, and predictable pricing.

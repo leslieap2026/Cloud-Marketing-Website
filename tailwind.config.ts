@@ -21,7 +21,8 @@ const config: Config = {
         accent: "#22d3ee",
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
+        sans: ["var(--font-poppins)", "system-ui", "sans-serif"],
+        subheading: ['"Helvetica Neue"', "Helvetica", "Arial", "sans-serif"],
       },
       maxWidth: {
         container: "1140px",
