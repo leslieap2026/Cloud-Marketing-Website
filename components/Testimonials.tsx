@@ -13,8 +13,8 @@ const quotes = [
     quote:
       "Within six months our inbound leads tripled and we finally had a brand that felt like us. It's the best investment we've made.",
     initials: "AK",
-    name: "Aisha Khan",
-    role: "Founder, Bloom & Co.",
+    name: "Brittani Washington",
+    role: "Brit Services Consulting LLC.",
   },
   {
     quote:
