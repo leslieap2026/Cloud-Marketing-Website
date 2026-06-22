@@ -39,7 +39,7 @@ export default function Solutions() {
           </a>
         </div>
 
-        <div className="grid grid-cols-2 gap-[18px] rounded-card p-9 text-white max-[720px]:grid-cols-1 bg-[linear-gradient(160deg,#141b38,#0b1020)]">
+        <div className="grid grid-cols-2 gap-[18px] rounded-card p-9 text-white max-[720px]:grid-cols-1 bg-[linear-gradient(160deg,#2a525e,#1d3a42)]">
           {stats.map((s) => (
             <div key={s.label}>
               <span className="gradient-text block text-[2rem] font-extrabold">{s.num}</span>

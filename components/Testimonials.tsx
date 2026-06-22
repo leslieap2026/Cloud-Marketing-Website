@@ -31,7 +31,7 @@ export default function Testimonials() {
             <figure key={t.name} className="m-0 rounded-card border border-line bg-surface p-7 shadow-soft">
               <blockquote className="mb-5 text-[1.05rem] text-ink">&ldquo;{t.quote}&rdquo;</blockquote>
               <figcaption className="flex items-center gap-3 text-[0.9rem] text-muted">
-                <span className="grid h-[42px] w-[42px] shrink-0 place-items-center rounded-full bg-[linear-gradient(135deg,#4f6bff,#7c4dff)] font-bold text-white">
+                <span className="grid h-[42px] w-[42px] shrink-0 place-items-center rounded-full bg-[linear-gradient(135deg,#0cc0df,#264a54)] font-bold text-white">
                   {t.initials}
                 </span>
                 <span>

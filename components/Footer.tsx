@@ -9,7 +9,7 @@ export default function Footer() {
     <footer className="bg-bg px-0 pb-7 pt-14 text-[#cbd5e1]">
       <div className="container-x grid gap-10 border-b border-white/10 pb-9 max-[720px]:grid-cols-1 min-[721px]:grid-cols-[1.4fr_2fr]">
         <div>
-          <a href="#top" className="text-[1.2rem] font-extrabold text-white no-underline">
+          <a href="#top" className="font-heading text-[1.2rem] font-extrabold text-white no-underline">
             Cloud <span className="text-brand">Marketing</span>
           </a>
           <p className="mt-2.5 max-w-[28ch] text-[#94a3b8]">

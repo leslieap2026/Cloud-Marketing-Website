@@ -19,7 +19,7 @@ export default function Header() {
       className="sticky top-0 z-50 border-b border-line bg-white/85 backdrop-blur-md"
     >
       <div className="container-x flex h-[68px] items-center justify-between">
-        <a href="#top" className="flex items-center gap-2 text-[1.2rem] font-extrabold text-ink no-underline">
+        <a href="#top" className="flex items-center gap-2 font-heading text-[1.2rem] font-extrabold text-ink no-underline">
           <span className="text-brand">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path

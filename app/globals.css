@@ -6,6 +6,15 @@ html {
   scroll-behavior: smooth;
 }
 
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-heading;
+  }
+}
+
 @layer components {
   .container-x {
     @apply w-full max-w-container mx-auto px-6;
@@ -18,10 +27,10 @@ html {
   }
   .btn-primary {
     @apply text-white shadow-soft;
-    background: linear-gradient(135deg, #4f6bff, #7c4dff);
+    background: linear-gradient(135deg, #0cc0df, #264a54);
   }
   .btn-primary:hover {
-    box-shadow: 0 14px 30px -10px rgba(79, 107, 255, 0.6);
+    box-shadow: 0 14px 30px -10px rgba(12, 192, 223, 0.5);
   }
   .btn-ghost {
     @apply bg-transparent text-ink border-line hover:bg-surface-2;
@@ -40,7 +49,7 @@ html {
     @apply py-[88px] max-[720px]:py-16;
   }
   .section-sub {
-    @apply font-subheading text-ink-soft text-[1.08rem];
+    @apply text-ink-soft text-[1.08rem];
   }
 
   .gradient-text {

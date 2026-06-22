@@ -25,7 +25,7 @@ export default function CTA() {
   };
 
   return (
-    <section id="contact" className="section text-white bg-[linear-gradient(160deg,#141b38,#0b1020)]">
+    <section id="contact" className="section text-white bg-[linear-gradient(160deg,#2a525e,#1d3a42)]">
       <div className="container-x grid items-center gap-12 max-[900px]:grid-cols-1 min-[901px]:grid-cols-2">
         <div>
           <h2 className="mb-2 text-[clamp(1.7rem,3.5vw,2.6rem)] font-bold tracking-[-0.02em] text-white">

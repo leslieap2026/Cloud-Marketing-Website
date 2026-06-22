@@ -8,21 +8,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        bg: "#0b1020",
-        "bg-soft": "#111834",
+        bg: "#1d3a42",
+        "bg-soft": "#244852",
         ink: "#0f172a",
         "ink-soft": "#475569",
         muted: "#64748b",
         line: "#e2e8f0",
         surface: "#ffffff",
         "surface-2": "#f5f7fb",
-        brand: "#4f6bff",
-        "brand-2": "#7c4dff",
+        brand: "#0cc0df",
+        "brand-2": "#264a54",
         accent: "#22d3ee",
       },
       fontFamily: {
-        sans: ["var(--font-poppins)", "system-ui", "sans-serif"],
-        subheading: ['"Helvetica Neue"', "Helvetica", "Arial", "sans-serif"],
+        sans: ['"Helvetica Neue"', "Helvetica", "Arial", "sans-serif"],
+        heading: ["var(--font-poppins)", "system-ui", "sans-serif"],
       },
       maxWidth: {
         container: "1140px",

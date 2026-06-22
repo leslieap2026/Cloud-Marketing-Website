@@ -56,12 +56,12 @@ export default function Pricing() {
               key={p.name}
               className={`relative rounded-card border bg-surface p-8 ${
                 p.featured
-                  ? "border-brand shadow-[0_24px_50px_-22px_rgba(79,107,255,0.5)] min-[901px]:-translate-y-2"
+                  ? "border-brand shadow-[0_24px_50px_-22px_rgba(12,192,223,0.45)] min-[901px]:-translate-y-2"
                   : "border-line shadow-soft"
               }`}
             >
               {p.featured && (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-[linear-gradient(135deg,#4f6bff,#7c4dff)] px-3.5 py-1.5 text-[0.75rem] font-bold uppercase tracking-[0.08em] text-white">
+                <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-[linear-gradient(135deg,#0cc0df,#264a54)] px-3.5 py-1.5 text-[0.75rem] font-bold uppercase tracking-[0.08em] text-white">
                   Most popular
                 </span>
               )}
