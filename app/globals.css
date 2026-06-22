@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .container-x {
+    @apply w-full max-w-container mx-auto px-6;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 font-semibold text-base
+           px-6 py-3 rounded-[10px] border border-transparent cursor-pointer
+           transition-transform duration-150 ease-out hover:-translate-y-0.5 no-underline;
+  }
+  .btn-primary {
+    @apply text-white shadow-soft;
+    background: linear-gradient(135deg, #4f6bff, #7c4dff);
+  }
+  .btn-primary:hover {
+    box-shadow: 0 14px 30px -10px rgba(79, 107, 255, 0.6);
+  }
+  .btn-ghost {
+    @apply bg-transparent text-ink border-line hover:bg-surface-2;
+  }
+  .btn-sm {
+    @apply px-4 py-2 text-[0.92rem];
+  }
+  .btn-block {
+    @apply w-full;
+  }
+
+  .eyebrow {
+    @apply uppercase tracking-[0.14em] text-[0.78rem] font-bold text-brand mb-3;
+  }
+  .section {
+    @apply py-[88px] max-[720px]:py-16;
+  }
+  .section-sub {
+    @apply text-ink-soft text-[1.08rem];
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #ffffff, #22d3ee);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
