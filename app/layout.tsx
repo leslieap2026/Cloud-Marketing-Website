@@ -9,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Nimbus Cloud — Infrastructure That Scales With You",
+  title: "Cloud Marketing LLC — Seamless & Easy Marketing",
   description:
-    "Nimbus Cloud — scalable, secure cloud infrastructure for modern teams. Compute, storage, and global networking that grows with you.",
+    "Cloud Marketing LLC — scalable, secure cloud infrastructure for modern teams. Compute, storage, and global networking that grows with you.",
 };
 
 export default function RootLayout({
