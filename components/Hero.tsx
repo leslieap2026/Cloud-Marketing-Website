@@ -1,34 +1,50 @@
+import TypedText from "./TypedText";
+
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden pb-24 pt-20 bg-[radial-gradient(1100px_600px_at_50%_-12%,rgba(30,111,255,0.22),transparent_60%),radial-gradient(800px_500px_at_85%_10%,rgba(12,192,223,0.16),transparent_55%),linear-gradient(180deg,#e9f1ff,#ffffff)]">
-      <div className="container-x flex flex-col items-center text-center">
-        <p className="anim-up eyebrow">A full-service growth marketing studio</p>
+    <section className="hero-aurora relative overflow-hidden pb-24 pt-20 text-white">
+      {/* fun textured overlays */}
+      <div className="hero-grid pointer-events-none absolute inset-0 opacity-40" aria-hidden="true" />
+      <div className="orb-float-1 pointer-events-none absolute -left-16 top-10 h-[260px] w-[260px] rounded-full opacity-40 blur-3xl bg-[radial-gradient(circle_at_30%_30%,#ffffff,transparent_70%)]" aria-hidden="true" />
+      <div className="orb-float-2 pointer-events-none absolute -right-10 top-40 h-[220px] w-[220px] rounded-full opacity-30 blur-3xl bg-[radial-gradient(circle_at_30%_30%,#bff4ff,transparent_70%)]" aria-hidden="true" />
+
+      <div className="container-x relative z-[2] flex flex-col items-center text-center">
+        <p className="anim-up mb-3 text-[0.78rem] font-bold uppercase tracking-[0.16em] text-white/80">
+          A full-service growth marketing studio
+        </p>
         <h1
-          className="anim-up mx-auto mb-4 max-w-[16ch] text-[clamp(2.3rem,5.5vw,3.8rem)] font-extrabold leading-[1.1] tracking-[-0.02em]"
+          className="anim-up mx-auto mb-5 max-w-[16ch] text-[clamp(2.7rem,6.5vw,4.7rem)] font-extrabold leading-[1.08] tracking-[-0.02em] text-white"
           style={{ animationDelay: "80ms" }}
         >
-          Marketing that helps translate your brand to the right audience.
+          <TypedText text="Marketing that helps translate your brand to the right audience." />
         </h1>
         <p
-          className="anim-up mx-auto max-w-[54ch] text-[1.18rem] text-ink-soft"
+          className="anim-up mx-auto max-w-[54ch] text-[1.18rem] text-white/85"
           style={{ animationDelay: "160ms" }}
         >
-          Cloud Marketing LLC is a agency that focuses on helping women founders in the Consumer Product Goods Industry — so you get campaigns that don&apos;t just look
-          good, they grow your bottom line.
+          Cloud Marketing LLC is a agency that focuses on helping women founders
+          in the Consumer Product Goods Industry — so you get campaigns that
+          don&apos;t just look good, they grow your bottom line.
         </p>
         <div
           className="anim-up my-7 flex flex-wrap justify-center gap-3.5"
           style={{ animationDelay: "240ms" }}
         >
-          <a href="#contact" className="btn btn-primary">
+          <a
+            href="#contact"
+            className="btn bg-white text-ink shadow-soft hover:bg-white"
+          >
             Book a free strategy call
           </a>
-          <a href="#results" className="btn btn-ghost">
+          <a
+            href="#results"
+            className="btn border-white/60 bg-transparent text-white hover:bg-white/10"
+          >
             See the results →
           </a>
         </div>
         <ul
-          className="anim-up flex flex-wrap justify-center gap-5 text-[0.92rem] text-muted"
+          className="anim-up flex flex-wrap justify-center gap-5 text-[0.92rem] text-white/75"
           style={{ animationDelay: "320ms" }}
         >
           <li>✓ Free 30-minute call</li>
@@ -41,15 +57,12 @@ export default function Hero() {
           className="anim-up relative mx-auto mt-14 w-full max-w-[860px]"
           style={{ animationDelay: "400ms" }}
         >
-          <div className="orb-float-1 absolute -top-10 -right-6 h-[200px] w-[200px] rounded-full opacity-50 blur-2xl bg-[radial-gradient(circle_at_30%_30%,#1e6fff,transparent_70%)]" aria-hidden="true" />
-          <div className="orb-float-2 absolute -bottom-10 -left-6 h-[180px] w-[180px] rounded-full opacity-50 blur-2xl bg-[radial-gradient(circle_at_30%_30%,#0cc0df,transparent_70%)]" aria-hidden="true" />
-
           <img
             src="/hero-dashboard.svg"
             alt="Marketing analytics dashboard showing 62% revenue growth, 4.2x return on ad spend, and rising campaign performance"
             width={860}
             height={549}
-            className="relative z-[2] w-full rounded-card border border-line shadow-card"
+            className="relative z-[2] w-full rounded-card border border-white/20 shadow-card"
           />
 
           {/* Floating badges */}

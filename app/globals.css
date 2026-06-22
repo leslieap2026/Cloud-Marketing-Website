@@ -88,6 +88,48 @@ html {
     transform: scaleY(1);
   }
 }
+@keyframes auroraShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes caretBlink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Animated, colorful hero background */
+.hero-aurora {
+  background: linear-gradient(120deg, #1b3a8f, #1e6fff, #0cc0df, #0aa3bd, #1e6fff);
+  background-size: 300% 300%;
+  animation: auroraShift 16s ease infinite;
+}
+/* Subtle dot-grid texture overlay */
+.hero-grid {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.22) 1px, transparent 1px);
+  background-size: 22px 22px;
+  -webkit-mask-image: radial-gradient(120% 90% at 50% 0%, #000 40%, transparent 75%);
+  mask-image: radial-gradient(120% 90% at 50% 0%, #000 40%, transparent 75%);
+}
+/* Typewriter caret */
+.typed-caret {
+  display: inline-block;
+  margin-left: 1px;
+  font-weight: 300;
+  color: #bff4ff;
+  animation: caretBlink 1s step-end infinite;
+}
 
 /* Scroll-reveal — toggled by the <Reveal> component */
 .reveal {
@@ -149,7 +191,9 @@ html {
   .anim-up,
   .orb-float-1,
   .orb-float-2,
-  .bar {
+  .bar,
+  .hero-aurora,
+  .typed-caret {
     animation: none !important;
     transition: none !important;
     opacity: 1 !important;
