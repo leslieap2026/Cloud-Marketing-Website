@@ -2,77 +2,63 @@ import TypedText from "./TypedText";
 
 export default function Hero() {
   return (
-    <section className="hero-aurora relative overflow-hidden pb-24 pt-20 text-white">
-      {/* fun textured overlays */}
-      <div className="hero-grid pointer-events-none absolute inset-0 opacity-40" aria-hidden="true" />
-      <div className="orb-float-1 pointer-events-none absolute -left-16 top-10 h-[260px] w-[260px] rounded-full opacity-40 blur-3xl bg-[radial-gradient(circle_at_30%_30%,#ffffff,transparent_70%)]" aria-hidden="true" />
-      <div className="orb-float-2 pointer-events-none absolute -right-10 top-40 h-[220px] w-[220px] rounded-full opacity-30 blur-3xl bg-[radial-gradient(circle_at_30%_30%,#bff4ff,transparent_70%)]" aria-hidden="true" />
+    <section className="hero-aurora relative overflow-hidden pb-24 pt-24">
+      <div className="hero-grid pointer-events-none absolute inset-0 opacity-60" aria-hidden="true" />
+      <div className="orb-float-1 pointer-events-none absolute -left-20 top-16 h-[300px] w-[300px] rounded-full opacity-50 blur-3xl bg-[radial-gradient(circle_at_30%_30%,#f3d9c2,transparent_70%)]" aria-hidden="true" />
+      <div className="orb-float-2 pointer-events-none absolute -right-16 top-48 h-[260px] w-[260px] rounded-full opacity-40 blur-3xl bg-[radial-gradient(circle_at_30%_30%,#e7c7b3,transparent_70%)]" aria-hidden="true" />
 
       <div className="container-x relative z-[2] flex flex-col items-center text-center">
-        <p className="anim-up mb-3 text-[0.78rem] font-bold uppercase tracking-[0.16em] text-white/80">
-          A full-service growth marketing studio
-        </p>
+        <p className="anim-up eyebrow">Marketing for women-owned CPG brands</p>
         <h1
-          className="anim-up mx-auto mb-5 max-w-[16ch] text-[clamp(2.7rem,6.5vw,4.7rem)] font-extrabold leading-[1.08] tracking-[-0.02em] text-white"
+          className="anim-up mx-auto mb-6 max-w-[18ch] text-[clamp(2.8rem,6.5vw,5rem)] font-medium leading-[1.05] tracking-[-0.02em] text-ink"
           style={{ animationDelay: "80ms" }}
         >
-          <TypedText text="Marketing that helps translate your brand to the right audience." />
+          <TypedText text="Your product deserves to be seen." speed={55} />
         </h1>
         <p
-          className="anim-up mx-auto max-w-[54ch] text-[1.18rem] text-white/85"
+          className="anim-up mx-auto max-w-[52ch] text-[1.2rem] leading-relaxed text-ink-soft"
           style={{ animationDelay: "160ms" }}
         >
-          Cloud Marketing LLC is a agency that focuses on helping women founders
-          in the Consumer Product Goods Industry — so you get campaigns that
-          don&apos;t just look good, they grow your bottom line.
+          Cloud Marketing is a studio built exclusively for women-owned brands in
+          consumer products. We blend social media and email into one cohesive
+          strategy — so the right people finally discover what you&apos;ve made.
         </p>
         <div
-          className="anim-up my-7 flex flex-wrap justify-center gap-3.5"
+          className="anim-up my-8 flex flex-wrap justify-center gap-3.5"
           style={{ animationDelay: "240ms" }}
         >
-          <a
-            href="#contact"
-            className="btn bg-white text-ink shadow-soft hover:bg-white"
-          >
+          <a href="#contact" className="btn btn-primary">
             Book a free strategy call
           </a>
-          <a
-            href="#results"
-            className="btn border-white/60 bg-transparent text-white hover:bg-white/10"
-          >
-            See the results →
+          <a href="#about" className="btn btn-ghost">
+            Our story
           </a>
         </div>
         <ul
-          className="anim-up flex flex-wrap justify-center gap-5 text-[0.92rem] text-white/75"
+          className="anim-up flex flex-wrap justify-center gap-x-7 gap-y-2 text-[0.92rem] text-muted"
           style={{ animationDelay: "320ms" }}
         >
-          <li>✓ Free 30-minute call</li>
-          <li>✓ No long-term contracts</li>
-          <li>✓ Senior team, no hand-offs</li>
+          <li>Women-owned, exclusively</li>
+          <li aria-hidden="true">·</li>
+          <li>Social + email, in sync</li>
+          <li aria-hidden="true">·</li>
+          <li>Strategy built for you</li>
         </ul>
 
-        {/* Showcase image */}
+        {/* Showcase graphic */}
         <div
-          className="anim-up relative mx-auto mt-14 w-full max-w-[860px]"
+          className="anim-up relative mx-auto mt-16 w-full max-w-[820px]"
           style={{ animationDelay: "400ms" }}
         >
           <img
-            src="/hero-dashboard.svg"
-            alt="Marketing analytics dashboard showing 62% revenue growth, 4.2x return on ad spend, and rising campaign performance"
-            width={860}
-            height={549}
-            className="relative z-[2] w-full rounded-card border border-white/20 shadow-card"
+            src="/hero-cloud.svg"
+            alt="Soft illustration of clouds drifting over a warm horizon"
+            width={820}
+            height={515}
+            className="relative z-[2] w-full rounded-card shadow-card"
           />
-
-          {/* Floating badges */}
-          <div className="absolute left-3 top-5 z-[3] hidden items-center gap-2 rounded-full border border-line bg-white/95 px-3.5 py-2 text-[0.82rem] font-semibold text-ink-soft shadow-soft backdrop-blur sm:flex">
-            <span className="inline-block h-2.5 w-2.5 rounded-full bg-[#22c55e] shadow-[0_0_0_4px_rgba(34,197,94,0.18)]" />
-            Live campaign — Performing
-          </div>
-          <div className="absolute -bottom-4 right-4 z-[3] hidden rounded-card border border-line bg-white px-4 py-3 shadow-card sm:block">
-            <span className="block text-[1.3rem] font-extrabold text-ink">+318%</span>
-            <span className="text-[0.78rem] text-muted">Inbound leads</span>
+          <div className="absolute -bottom-5 left-1/2 z-[3] -translate-x-1/2 whitespace-nowrap rounded-full border border-line bg-surface px-5 py-2.5 text-[0.85rem] font-medium text-ink-soft shadow-soft">
+            The same way clouds are everywhere, your brand can be too.
           </div>
         </div>
       </div>

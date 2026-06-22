@@ -36,12 +36,12 @@ export default function Process() {
         <div className="grid grid-cols-4 gap-[22px] max-[900px]:grid-cols-2 max-[560px]:grid-cols-1">
           {steps.map((s, i) => (
             <Reveal key={s.num} delay={(i % 4) * 90}>
-              <article className="relative h-full rounded-card border border-line bg-surface p-7 transition-all duration-200 hover:-translate-y-1 hover:shadow-card">
-                <span className="block text-[2.4rem] font-extrabold leading-none text-brand">
+              <article className="relative h-full rounded-card border border-line bg-surface p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-card">
+                <span className="block text-[2.6rem] font-medium leading-none text-brand">
                   {s.num}
                 </span>
-                <h3 className="mb-2 mt-3 text-lg font-semibold">{s.title}</h3>
-                <p className="text-[0.95rem] text-ink-soft">{s.body}</p>
+                <h3 className="mb-2 mt-4 text-[1.2rem] font-medium">{s.title}</h3>
+                <p className="text-[0.95rem] leading-relaxed text-ink-soft">{s.body}</p>
               </article>
             </Reveal>
           ))}

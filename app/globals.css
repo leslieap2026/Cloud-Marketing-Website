@@ -26,11 +26,12 @@ html {
            transition-transform duration-150 ease-out hover:-translate-y-0.5 no-underline;
   }
   .btn-primary {
-    @apply text-white shadow-soft;
-    background: linear-gradient(135deg, #0cc0df, #264a54);
+    @apply text-surface shadow-soft;
+    background-color: #2c2620;
   }
   .btn-primary:hover {
-    box-shadow: 0 14px 30px -10px rgba(12, 192, 223, 0.5);
+    background-color: #3c342c;
+    box-shadow: 0 14px 30px -12px rgba(44, 38, 32, 0.45);
   }
   .btn-ghost {
     @apply bg-transparent text-ink border-line hover:bg-surface-2;
@@ -43,17 +44,17 @@ html {
   }
 
   .eyebrow {
-    @apply uppercase tracking-[0.14em] text-[0.78rem] font-bold text-brand mb-3;
+    @apply uppercase tracking-[0.2em] text-[0.74rem] font-semibold text-brand mb-4;
   }
   .section {
-    @apply py-[88px] max-[720px]:py-16;
+    @apply py-[104px] max-[720px]:py-20;
   }
   .section-sub {
-    @apply text-ink-soft text-[1.08rem];
+    @apply text-ink-soft text-[1.08rem] leading-relaxed;
   }
 
   .gradient-text {
-    background: linear-gradient(135deg, #ffffff, #22d3ee);
+    background: linear-gradient(135deg, #fbf8f3, #c9a892);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -109,25 +110,25 @@ html {
   }
 }
 
-/* Animated, colorful hero background */
+/* Soft, warm hero background — a gentle drifting cream/blush wash */
 .hero-aurora {
-  background: linear-gradient(120deg, #1b3a8f, #1e6fff, #0cc0df, #0aa3bd, #1e6fff);
-  background-size: 300% 300%;
-  animation: auroraShift 16s ease infinite;
+  background: linear-gradient(120deg, #fbf8f3, #f6ece0, #f3e3d6, #f7efe6, #fbf8f3);
+  background-size: 280% 280%;
+  animation: auroraShift 22s ease infinite;
 }
 /* Subtle dot-grid texture overlay */
 .hero-grid {
-  background-image: radial-gradient(rgba(255, 255, 255, 0.22) 1px, transparent 1px);
-  background-size: 22px 22px;
-  -webkit-mask-image: radial-gradient(120% 90% at 50% 0%, #000 40%, transparent 75%);
-  mask-image: radial-gradient(120% 90% at 50% 0%, #000 40%, transparent 75%);
+  background-image: radial-gradient(rgba(176, 135, 106, 0.18) 1px, transparent 1px);
+  background-size: 24px 24px;
+  -webkit-mask-image: radial-gradient(120% 90% at 50% 0%, #000 35%, transparent 72%);
+  mask-image: radial-gradient(120% 90% at 50% 0%, #000 35%, transparent 72%);
 }
 /* Typewriter caret */
 .typed-caret {
   display: inline-block;
-  margin-left: 1px;
+  margin-left: 2px;
   font-weight: 300;
-  color: #bff4ff;
+  color: #b0876a;
   animation: caretBlink 1s step-end infinite;
 }
 
@@ -174,7 +175,7 @@ html {
   bottom: -4px;
   height: 2px;
   width: 100%;
-  background: #0cc0df;
+  background: #b0876a;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.25s ease;

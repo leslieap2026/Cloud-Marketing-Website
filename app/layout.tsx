@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Fraunces } from "next/font/google";
 import "./globals.css";
 
-const poppins = Poppins({
+const fraunces = Fraunces({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-  variable: "--font-poppins",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-fraunces",
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Cloud Marketing LLC — Seamless & Easy Marketing",
+  title: "Cloud Marketing LLC — Marketing for women-owned CPG brands",
   description:
-    "Cloud Marketing LLC is a growth-marketing agency that helps women found brands turn attention into revenue — through branding, content, paid advertising, and high-converting websites.",
+    "Cloud Marketing LLC is a marketing studio built exclusively for women-owned CPG brands. We combine social media and email marketing into one cohesive strategy that grows brand awareness, an engaged audience, and loyal customers.",
 };
 
 export default function RootLayout({
@@ -21,10 +21,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={poppins.variable}>
+    <html lang="en" className={fraunces.variable}>
       <body className="font-sans text-ink bg-surface antialiased leading-relaxed">
         {children}
       </body>
     </html>
   );
 }
+

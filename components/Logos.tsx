@@ -13,7 +13,7 @@ export default function Logos() {
           {companies.map((c) => (
             <span
               key={c}
-              className="text-[1.15rem] font-bold tracking-[-0.02em] text-[#94a3b8] transition-colors duration-200 hover:text-ink"
+              className="font-heading text-[1.15rem] font-medium tracking-[-0.01em] text-muted transition-colors duration-200 hover:text-ink"
             >
               {c}
             </span>

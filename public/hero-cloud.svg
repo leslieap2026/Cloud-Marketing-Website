@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 540" role="img" aria-label="Soft illustration of clouds over a warm horizon">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f3ddcb"/>
+      <stop offset="55%" stop-color="#f7e9dd"/>
+      <stop offset="100%" stop-color="#fbf5ee"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fbeede"/>
+      <stop offset="60%" stop-color="#f3d9c2"/>
+      <stop offset="100%" stop-color="#f3d9c2" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cloud" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fbf3ea"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="860" height="540" rx="20" fill="url(#sky)"/>
+
+  <!-- warm sun glow -->
+  <circle cx="470" cy="300" r="190" fill="url(#sun)"/>
+  <circle cx="470" cy="298" r="92" fill="#fcefe1"/>
+
+  <!-- soft horizon -->
+  <path d="M0 408 Q430 372 860 408 L860 540 L0 540 Z" fill="#f0ddca" opacity="0.7"/>
+
+  <!-- clouds -->
+  <g fill="url(#cloud)">
+    <g opacity="0.95">
+      <ellipse cx="250" cy="200" rx="78" ry="42"/>
+      <ellipse cx="300" cy="180" rx="58" ry="40"/>
+      <ellipse cx="200" cy="184" rx="48" ry="34"/>
+      <rect x="180" y="196" width="150" height="34" rx="17"/>
+    </g>
+    <g opacity="0.9">
+      <ellipse cx="610" cy="250" rx="70" ry="38"/>
+      <ellipse cx="655" cy="232" rx="50" ry="34"/>
+      <ellipse cx="566" cy="236" rx="42" ry="30"/>
+      <rect x="548" y="246" width="130" height="30" rx="15"/>
+    </g>
+    <g opacity="0.85">
+      <ellipse cx="430" cy="150" rx="60" ry="30"/>
+      <ellipse cx="468" cy="136" rx="40" ry="26"/>
+      <rect x="378" y="146" width="112" height="24" rx="12"/>
+    </g>
+  </g>
+
+  <!-- tiny sparkles -->
+  <g fill="#b0876a" opacity="0.6">
+    <path d="M150 330 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4 z"/>
+    <path d="M720 360 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z"/>
+  </g>
+</svg>
