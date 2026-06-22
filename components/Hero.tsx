@@ -13,8 +13,7 @@ export default function Hero() {
           className="anim-up mx-auto max-w-[54ch] text-[1.18rem] text-ink-soft"
           style={{ animationDelay: "160ms" }}
         >
-          Cloud Marketing is a boutique studio that blends sharp strategy with
-          hands-on execution — so you get campaigns that don&apos;t just look
+          Cloud Marketing LLC is a agency that focuses on helping women founders in the Consumer Product Goods Industry — so you get campaigns that don&apos;t just look
           good, they grow your bottom line.
         </p>
         <div
