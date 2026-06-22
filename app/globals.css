@@ -109,11 +109,11 @@ html {
   }
 }
 
-/* Animated, colorful hero background */
+/* Animated, airy sky-blue hero background */
 .hero-aurora {
-  background: linear-gradient(120deg, #1b3a8f, #1e6fff, #0cc0df, #0aa3bd, #1e6fff);
+  background: linear-gradient(120deg, #1366c4, #2390db, #38b9da, #2390db, #1366c4);
   background-size: 300% 300%;
-  animation: auroraShift 16s ease infinite;
+  animation: auroraShift 18s ease infinite;
 }
 /* Subtle dot-grid texture overlay */
 .hero-grid {
