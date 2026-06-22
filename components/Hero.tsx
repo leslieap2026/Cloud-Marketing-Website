@@ -7,7 +7,7 @@ export default function Hero() {
           className="anim-up mx-auto mb-4 max-w-[16ch] text-[clamp(2.3rem,5.5vw,3.8rem)] font-extrabold leading-[1.1] tracking-[-0.02em]"
           style={{ animationDelay: "80ms" }}
         >
-          Marketing that helps growing brands turn attention into revenue.
+          Marketing that helps translate your brand to the right audience.
         </h1>
         <p
           className="anim-up mx-auto max-w-[54ch] text-[1.18rem] text-ink-soft"
