@@ -30,7 +30,7 @@ export default function CTA() {
       <div className="container-x grid items-center gap-12 max-[900px]:grid-cols-1 min-[901px]:grid-cols-2">
         <Reveal>
           <p className="eyebrow">Get in touch</p>
-          <h2 className="mb-3 text-[clamp(1.9rem,4vw,3rem)] font-bold tracking-[-0.02em] text-white">
+          <h2 className="mb-3 text-[clamp(1.9rem,4vw,3rem)] font-medium tracking-[-0.02em] text-white">
             Let&apos;s give your brand a voice.
           </h2>
           <p className="max-w-[42ch] text-[1.12rem] leading-relaxed text-[#aab4d4]">

@@ -33,7 +33,7 @@ export default function Solutions() {
 
         <Reveal delay={140} className="mx-auto mt-14 max-w-[860px]">
           <figure className="rounded-card bg-[linear-gradient(160deg,#2a525e,#1d3a42)] px-8 py-14 text-center text-white md:px-16">
-            <blockquote className="text-[clamp(1.5rem,3.2vw,2.3rem)] font-bold leading-[1.25] tracking-[-0.01em]">
+            <blockquote className="text-[clamp(1.5rem,3.2vw,2.3rem)] font-medium leading-[1.25] tracking-[-0.01em]">
               &ldquo;The same way clouds are everywhere,
               <br className="hidden sm:block" /> your brand can be too.&rdquo;
             </blockquote>

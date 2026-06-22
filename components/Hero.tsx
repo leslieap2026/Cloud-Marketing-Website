@@ -2,23 +2,38 @@ import TypedText from "./TypedText";
 
 export default function Hero() {
   return (
-    <section className="hero-aurora relative overflow-hidden pb-24 pt-24 text-ink">
-      <div className="hero-grid pointer-events-none absolute inset-0 opacity-60" aria-hidden="true" />
-      <div className="orb-float-1 pointer-events-none absolute -left-20 top-16 h-[300px] w-[300px] rounded-full opacity-50 blur-3xl bg-[radial-gradient(circle_at_30%_30%,#ffffff,transparent_70%)]" aria-hidden="true" />
-      <div className="orb-float-2 pointer-events-none absolute -right-16 top-48 h-[260px] w-[260px] rounded-full opacity-40 blur-3xl bg-[radial-gradient(circle_at_30%_30%,#ffffff,transparent_70%)]" aria-hidden="true" />
+    <section className="hero-aurora relative overflow-hidden pb-24 pt-24 text-white">
+      {/* Background video — drop your clip in at public/hero.mp4 (muted, loops) */}
+      <video
+        className="absolute inset-0 z-0 h-full w-full object-cover"
+        autoPlay
+        muted
+        loop
+        playsInline
+        aria-hidden="true"
+      >
+        <source src="/hero.mp4" type="video/mp4" />
+        <source src="/hero.webm" type="video/webm" />
+      </video>
+
+      {/* Contrast scrim so the headline stays readable over the video */}
+      <div
+        className="absolute inset-0 z-[1] bg-[linear-gradient(180deg,rgba(8,20,45,0.55),rgba(8,20,45,0.28)_55%,rgba(8,20,45,0.5))]"
+        aria-hidden="true"
+      />
 
       <div className="container-x relative z-[2] flex flex-col items-center text-center">
-        <p className="anim-up mb-4 text-[0.78rem] font-bold uppercase tracking-[0.2em] text-[#155fb0]">
+        <p className="anim-up mb-4 text-[0.78rem] font-bold uppercase tracking-[0.2em] text-white/85">
           Marketing for women-owned CPG brands
         </p>
         <h1
-          className="anim-up font-display mx-auto mb-6 max-w-[18ch] text-[clamp(2.8rem,6.5vw,5rem)] font-semibold leading-[1.07] tracking-[-0.01em] text-ink"
+          className="anim-up font-display mx-auto mb-6 max-w-[18ch] text-[clamp(2.8rem,6.5vw,5rem)] font-semibold leading-[1.07] tracking-[-0.01em] text-white"
           style={{ animationDelay: "80ms" }}
         >
           <TypedText text="Your product deserves to be seen." speed={55} />
         </h1>
         <p
-          className="anim-up mx-auto max-w-[52ch] text-[1.2rem] leading-relaxed text-ink-soft"
+          className="anim-up mx-auto max-w-[52ch] text-[1.2rem] leading-relaxed text-white/85"
           style={{ animationDelay: "160ms" }}
         >
           Cloud Marketing is a studio built exclusively for women-owned brands in
@@ -29,15 +44,15 @@ export default function Hero() {
           className="anim-up my-8 flex flex-wrap justify-center gap-3.5"
           style={{ animationDelay: "240ms" }}
         >
-          <a href="#contact" className="btn btn-primary">
+          <a href="#contact" className="btn bg-white text-ink shadow-soft hover:bg-white">
             Book a free strategy call
           </a>
-          <a href="#about" className="btn border-ink/25 bg-white/40 text-ink hover:bg-white/70">
+          <a href="#about" className="btn border-white/60 bg-transparent text-white hover:bg-white/10">
             Our story
           </a>
         </div>
         <ul
-          className="anim-up flex flex-wrap justify-center gap-x-7 gap-y-2 text-[0.92rem] text-ink-soft"
+          className="anim-up flex flex-wrap justify-center gap-x-7 gap-y-2 text-[0.92rem] text-white/80"
           style={{ animationDelay: "320ms" }}
         >
           <li>Women-owned, exclusively</li>
@@ -46,23 +61,6 @@ export default function Hero() {
           <li aria-hidden="true">·</li>
           <li>Strategy built for you</li>
         </ul>
-
-        {/* Showcase graphic */}
-        <div
-          className="anim-up relative mx-auto mt-16 w-full max-w-[820px]"
-          style={{ animationDelay: "400ms" }}
-        >
-          <img
-            src="/hero-cloud.svg"
-            alt="Soft illustration of white clouds drifting across a blue sky"
-            width={820}
-            height={515}
-            className="relative z-[2] w-full rounded-card border border-white/20 shadow-card"
-          />
-          <div className="absolute -bottom-5 left-1/2 z-[3] -translate-x-1/2 whitespace-nowrap rounded-full border border-line bg-white px-5 py-2.5 text-[0.85rem] font-medium text-ink-soft shadow-soft">
-            The same way clouds are everywhere, your brand can be too.
-          </div>
-        </div>
       </div>
     </section>
   );

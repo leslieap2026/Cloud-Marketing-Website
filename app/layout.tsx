@@ -29,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${poppins.variable} ${fraunces.variable}`}>
-      <body className="font-sans text-ink bg-surface antialiased leading-relaxed">
+      <body className="font-sans font-light text-ink bg-surface antialiased leading-relaxed">
         {children}
       </body>
     </html>
