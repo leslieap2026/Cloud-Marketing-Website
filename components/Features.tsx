@@ -1,4 +1,5 @@
 import SectionHead from "./SectionHead";
+import Reveal from "./Reveal";
 
 const features = [
   { icon: "⚡", title: "Instant Compute", body: "Spin up virtual machines and containers in under 30 seconds. Autoscale automatically as traffic spikes." },
@@ -19,17 +20,16 @@ export default function Features() {
           sub="One platform, fully integrated. Spend less time on plumbing and more time building products your customers love."
         />
         <div className="grid grid-cols-3 gap-[22px] max-[900px]:grid-cols-2 max-[720px]:grid-cols-1">
-          {features.map((f) => (
-            <article
-              key={f.title}
-              className="group rounded-card border border-line bg-surface p-7 transition-all duration-200 hover:-translate-y-1 hover:border-transparent hover:shadow-card"
-            >
-              <div className="mb-4 grid h-12 w-12 place-items-center rounded-xl bg-surface-2 text-2xl">
-                {f.icon}
-              </div>
-              <h3 className="mb-2 text-xl font-semibold">{f.title}</h3>
-              <p className="text-ink-soft">{f.body}</p>
-            </article>
+          {features.map((f, i) => (
+            <Reveal key={f.title} delay={(i % 3) * 90}>
+              <article className="group h-full rounded-card border border-line bg-surface p-7 transition-all duration-200 hover:-translate-y-1 hover:border-transparent hover:shadow-card">
+                <div className="mb-4 grid h-12 w-12 place-items-center rounded-xl bg-surface-2 text-2xl transition-transform duration-200 group-hover:scale-110">
+                  {f.icon}
+                </div>
+                <h3 className="mb-2 text-xl font-semibold">{f.title}</h3>
+                <p className="text-ink-soft">{f.body}</p>
+              </article>
+            </Reveal>
           ))}
         </div>
       </div>

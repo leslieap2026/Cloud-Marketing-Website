@@ -1,4 +1,5 @@
 import SectionHead from "./SectionHead";
+import Reveal from "./Reveal";
 
 const plans = [
   {
@@ -51,10 +52,10 @@ export default function Pricing() {
           sub="Start free. Upgrade when you're ready. No hidden fees, ever."
         />
         <div className="grid grid-cols-3 items-start gap-6 max-[900px]:grid-cols-1">
-          {plans.map((p) => (
+          {plans.map((p, i) => (
+            <Reveal key={p.name} delay={i * 110} className="h-full">
             <article
-              key={p.name}
-              className={`relative rounded-card border bg-surface p-8 ${
+              className={`relative h-full rounded-card border bg-surface p-8 transition-shadow duration-200 hover:shadow-card ${
                 p.featured
                   ? "border-brand shadow-[0_24px_50px_-22px_rgba(12,192,223,0.45)] min-[901px]:-translate-y-2"
                   : "border-line shadow-soft"
@@ -86,6 +87,7 @@ export default function Pricing() {
                 {p.cta}
               </a>
             </article>
+            </Reveal>
           ))}
         </div>
       </div>

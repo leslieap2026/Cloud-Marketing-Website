@@ -1,3 +1,5 @@
+import Reveal from "./Reveal";
+
 const companies = ["Aperture", "Northwind", "Globex", "Initech", "Umbrella", "Stark Labs"];
 
 export default function Logos() {
@@ -7,13 +9,16 @@ export default function Logos() {
         <p className="mb-[18px] text-center text-[0.85rem] uppercase tracking-[0.12em] text-muted">
           Powering teams at companies you know
         </p>
-        <div className="flex flex-wrap justify-center gap-10">
+        <Reveal className="flex flex-wrap justify-center gap-10">
           {companies.map((c) => (
-            <span key={c} className="text-[1.15rem] font-bold tracking-[-0.02em] text-[#94a3b8]">
+            <span
+              key={c}
+              className="text-[1.15rem] font-bold tracking-[-0.02em] text-[#94a3b8] transition-colors duration-200 hover:text-ink"
+            >
               {c}
             </span>
           ))}
-        </div>
+        </Reveal>
       </div>
     </section>
   );

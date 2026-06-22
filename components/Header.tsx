@@ -36,7 +36,11 @@ export default function Header() {
         {/* Desktop nav */}
         <nav className="hidden items-center gap-6 min-[721px]:flex" aria-label="Primary">
           {navLinks.map((l) => (
-            <a key={l.href} href={l.href} className="font-medium text-ink-soft no-underline hover:text-ink">
+            <a
+              key={l.href}
+              href={l.href}
+              className="nav-link font-medium text-ink-soft no-underline hover:text-ink"
+            >
               {l.label}
             </a>
           ))}

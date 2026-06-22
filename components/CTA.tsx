@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, FormEvent } from "react";
+import Reveal from "./Reveal";
 
 export default function CTA() {
   const [message, setMessage] = useState("");
@@ -27,20 +28,20 @@ export default function CTA() {
   return (
     <section id="contact" className="section text-white bg-[linear-gradient(160deg,#2a525e,#1d3a42)]">
       <div className="container-x grid items-center gap-12 max-[900px]:grid-cols-1 min-[901px]:grid-cols-2">
-        <div>
+        <Reveal>
           <h2 className="mb-2 text-[clamp(1.7rem,3.5vw,2.6rem)] font-bold tracking-[-0.02em] text-white">
             Ready to build on Cloud Marketing?
           </h2>
           <p className="max-w-[40ch] text-[1.1rem] text-[#aab4d4]">
             Start your free trial today. Deploy your first app in minutes — no credit card required.
           </p>
-        </div>
+        </Reveal>
 
-        <form
-          onSubmit={handleSubmit}
-          noValidate
+        <Reveal
+          delay={120}
           className="rounded-card border border-white/10 bg-white/5 p-7"
         >
+        <form onSubmit={handleSubmit} noValidate>
           <div className="mb-3.5">
             <label htmlFor="name" className="sr-only">
               Full name
@@ -82,6 +83,7 @@ export default function CTA() {
             </p>
           )}
         </form>
+        </Reveal>
       </div>
     </section>
   );

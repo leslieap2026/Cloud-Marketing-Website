@@ -1,3 +1,5 @@
+import Reveal from "./Reveal";
+
 const items = [
   { label: "Startups", body: "Generous free tier and usage-based pricing so you only pay as you grow." },
   { label: "Enterprises", body: "Dedicated support, private networking, and custom compliance controls." },
@@ -16,7 +18,7 @@ export default function Solutions() {
   return (
     <section id="solutions" className="section bg-surface-2">
       <div className="container-x grid items-center gap-14 max-[900px]:grid-cols-1 min-[901px]:grid-cols-2">
-        <div>
+        <Reveal>
           <p className="eyebrow">Solutions</p>
           <h2 className="mb-2 text-[clamp(1.7rem,3.5vw,2.6rem)] font-bold tracking-[-0.02em]">
             Built for the way your team works
@@ -37,14 +39,14 @@ export default function Solutions() {
           <a href="#contact" className="btn btn-primary">
             Talk to sales
           </a>
-        </div>
+        </Reveal>
 
         <div className="grid grid-cols-2 gap-[18px] rounded-card p-9 text-white max-[720px]:grid-cols-1 bg-[linear-gradient(160deg,#2a525e,#1d3a42)]">
-          {stats.map((s) => (
-            <div key={s.label}>
+          {stats.map((s, i) => (
+            <Reveal key={s.label} delay={i * 110}>
               <span className="gradient-text block text-[2rem] font-extrabold">{s.num}</span>
               <span className="text-[0.9rem] text-[#aab4d4]">{s.label}</span>
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>
