@@ -40,9 +40,13 @@ export default function Solutions() {
 
         <Reveal delay={120}>
           <div className="rounded-card p-9 text-white bg-[linear-gradient(160deg,#2a525e,#1d3a42)]">
-            <span className="grid h-[64px] w-[64px] place-items-center rounded-full bg-[linear-gradient(135deg,#0cc0df,#264a54)] text-[1.4rem] font-extrabold text-white">
-              JL
-            </span>
+            <img
+              src="/avatar-founder.svg"
+              alt="Jordan Lee, Founder and Lead Strategist"
+              width={64}
+              height={64}
+              className="h-16 w-16 rounded-full"
+            />
             <p className="mt-5 text-[1.15rem] font-semibold leading-snug">
               &ldquo;I only take on brands I genuinely believe I can grow — and
               then I treat it like my own.&rdquo;

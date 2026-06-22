@@ -15,7 +15,7 @@ const config: Config = {
         muted: "#64748b",
         line: "#e2e8f0",
         surface: "#ffffff",
-        "surface-2": "#f5f7fb",
+        "surface-2": "#eef3fc",
         brand: "#0cc0df",
         "brand-2": "#264a54",
         accent: "#22d3ee",

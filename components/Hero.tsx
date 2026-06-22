@@ -1,84 +1,66 @@
-const metrics = [
-  { val: "4.2x", label: "Return on ad spend" },
-  { val: "+62%", label: "Revenue growth" },
-  { val: "318", label: "Leads / month" },
-  { val: "3.1M", label: "People reached" },
-];
-
-const bars = [40, 65, 50, 80, 70, 95, 60];
-
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden pb-20 pt-[72px] bg-[radial-gradient(1200px_600px_at_80%_-10%,rgba(12,192,223,0.12),transparent_60%),radial-gradient(900px_500px_at_0%_0%,rgba(34,211,238,0.10),transparent_55%)]">
-      <div className="container-x grid items-center gap-14 max-[900px]:grid-cols-1 min-[901px]:grid-cols-[1.1fr_0.9fr]">
-        {/* Copy */}
-        <div className="max-[900px]:order-2">
-          <p className="anim-up eyebrow">A full-service growth marketing studio</p>
-          <h1
-            className="anim-up mb-3 text-[clamp(2.2rem,5vw,3.6rem)] font-extrabold leading-[1.15] tracking-[-0.02em]"
-            style={{ animationDelay: "80ms" }}
-          >
-            Marketing that helps growing brands turn attention into revenue.
-          </h1>
-          <p
-            className="anim-up max-w-[42ch] text-[1.18rem] text-ink-soft"
-            style={{ animationDelay: "160ms" }}
-          >
-            Cloud Marketing is a boutique studio that blends sharp strategy with
-            hands-on execution — so you get campaigns that don&apos;t just look
-            good, they grow your bottom line.
-          </p>
-          <div
-            className="anim-up my-6 flex flex-wrap gap-3.5"
-            style={{ animationDelay: "240ms" }}
-          >
-            <a href="#contact" className="btn btn-primary">
-              Book a free strategy call
-            </a>
-            <a href="#results" className="btn btn-ghost">
-              See the results →
-            </a>
-          </div>
-          <ul
-            className="anim-up flex flex-wrap gap-5 text-[0.92rem] text-muted"
-            style={{ animationDelay: "320ms" }}
-          >
-            <li>✓ Free 30-minute call</li>
-            <li>✓ No long-term contracts</li>
-            <li>✓ Senior team, no hand-offs</li>
-          </ul>
-        </div>
-
-        {/* Visual */}
-        <div
-          className="anim-up relative min-h-[340px] max-[900px]:order-1"
-          style={{ animationDelay: "220ms" }}
-          aria-hidden="true"
+    <section className="relative overflow-hidden pb-24 pt-20 bg-[radial-gradient(1100px_600px_at_50%_-12%,rgba(30,111,255,0.22),transparent_60%),radial-gradient(800px_500px_at_85%_10%,rgba(12,192,223,0.16),transparent_55%),linear-gradient(180deg,#e9f1ff,#ffffff)]">
+      <div className="container-x flex flex-col items-center text-center">
+        <p className="anim-up eyebrow">A full-service growth marketing studio</p>
+        <h1
+          className="anim-up mx-auto mb-4 max-w-[16ch] text-[clamp(2.3rem,5.5vw,3.8rem)] font-extrabold leading-[1.1] tracking-[-0.02em]"
+          style={{ animationDelay: "80ms" }}
         >
-          <div className="orb-float-1 absolute -top-8 right-2.5 h-[220px] w-[220px] rounded-full opacity-50 blur-lg bg-[radial-gradient(circle_at_30%_30%,#0cc0df,transparent_70%)]" />
-          <div className="orb-float-2 absolute -bottom-5 left-0 h-[180px] w-[180px] rounded-full opacity-50 blur-lg bg-[radial-gradient(circle_at_30%_30%,#22d3ee,transparent_70%)]" />
-          <div className="relative z-[2] rounded-card border border-line bg-surface p-[22px] shadow-card">
-            <div className="flex items-center gap-2 text-[0.92rem] font-semibold text-ink-soft">
-              <span className="inline-block h-2.5 w-2.5 rounded-full bg-[#22c55e] shadow-[0_0_0_4px_rgba(34,197,94,0.18)]" />
-              Live campaign — Performing
-            </div>
-            <div className="my-[18px] grid grid-cols-2 gap-3">
-              {metrics.map((m) => (
-                <div key={m.label} className="rounded-[10px] bg-surface-2 px-3.5 py-3">
-                  <span className="block text-[1.25rem] font-extrabold">{m.val}</span>
-                  <span className="text-[0.8rem] text-muted">{m.label}</span>
-                </div>
-              ))}
-            </div>
-            <div className="flex h-20 items-end gap-2 pt-1.5">
-              {bars.map((h, i) => (
-                <span
-                  key={i}
-                  className="bar flex-1 rounded-t-md opacity-85 bg-gradient-to-b from-brand to-brand-2"
-                  style={{ height: `${h}%`, animationDelay: `${0.3 + i * 0.08}s` }}
-                />
-              ))}
-            </div>
+          Marketing that helps growing brands turn attention into revenue.
+        </h1>
+        <p
+          className="anim-up mx-auto max-w-[54ch] text-[1.18rem] text-ink-soft"
+          style={{ animationDelay: "160ms" }}
+        >
+          Cloud Marketing is a boutique studio that blends sharp strategy with
+          hands-on execution — so you get campaigns that don&apos;t just look
+          good, they grow your bottom line.
+        </p>
+        <div
+          className="anim-up my-7 flex flex-wrap justify-center gap-3.5"
+          style={{ animationDelay: "240ms" }}
+        >
+          <a href="#contact" className="btn btn-primary">
+            Book a free strategy call
+          </a>
+          <a href="#results" className="btn btn-ghost">
+            See the results →
+          </a>
+        </div>
+        <ul
+          className="anim-up flex flex-wrap justify-center gap-5 text-[0.92rem] text-muted"
+          style={{ animationDelay: "320ms" }}
+        >
+          <li>✓ Free 30-minute call</li>
+          <li>✓ No long-term contracts</li>
+          <li>✓ Senior team, no hand-offs</li>
+        </ul>
+
+        {/* Showcase image */}
+        <div
+          className="anim-up relative mx-auto mt-14 w-full max-w-[860px]"
+          style={{ animationDelay: "400ms" }}
+        >
+          <div className="orb-float-1 absolute -top-10 -right-6 h-[200px] w-[200px] rounded-full opacity-50 blur-2xl bg-[radial-gradient(circle_at_30%_30%,#1e6fff,transparent_70%)]" aria-hidden="true" />
+          <div className="orb-float-2 absolute -bottom-10 -left-6 h-[180px] w-[180px] rounded-full opacity-50 blur-2xl bg-[radial-gradient(circle_at_30%_30%,#0cc0df,transparent_70%)]" aria-hidden="true" />
+
+          <img
+            src="/hero-dashboard.svg"
+            alt="Marketing analytics dashboard showing 62% revenue growth, 4.2x return on ad spend, and rising campaign performance"
+            width={860}
+            height={549}
+            className="relative z-[2] w-full rounded-card border border-line shadow-card"
+          />
+
+          {/* Floating badges */}
+          <div className="absolute left-3 top-5 z-[3] hidden items-center gap-2 rounded-full border border-line bg-white/95 px-3.5 py-2 text-[0.82rem] font-semibold text-ink-soft shadow-soft backdrop-blur sm:flex">
+            <span className="inline-block h-2.5 w-2.5 rounded-full bg-[#22c55e] shadow-[0_0_0_4px_rgba(34,197,94,0.18)]" />
+            Live campaign — Performing
+          </div>
+          <div className="absolute -bottom-4 right-4 z-[3] hidden rounded-card border border-line bg-white px-4 py-3 shadow-card sm:block">
+            <span className="block text-[1.3rem] font-extrabold text-ink">+318%</span>
+            <span className="text-[0.78rem] text-muted">Inbound leads</span>
           </div>
         </div>
       </div>
