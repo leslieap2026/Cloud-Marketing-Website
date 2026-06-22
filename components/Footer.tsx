@@ -35,7 +35,7 @@ export default function Footer() {
             Cloud <span className="text-brand">Marketing</span>
           </a>
           <p className="mt-2.5 max-w-[30ch] text-[#94a3b8]">
-            Marketing that helps growing brands turn attention into revenue.
+            Marketing that helps translate your brand to the right audience.
           </p>
           <a href="#contact" className="btn btn-primary btn-sm mt-5">
             Book a call
