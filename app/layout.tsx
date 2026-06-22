@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Fraunces } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 
-const fraunces = Fraunces({
+const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-fraunces",
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-poppins",
   display: "swap",
 });
 
@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={fraunces.variable}>
+    <html lang="en" className={poppins.variable}>
       <body className="font-sans text-ink bg-surface antialiased leading-relaxed">
         {children}
       </body>

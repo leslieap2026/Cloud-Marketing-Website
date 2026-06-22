@@ -26,20 +26,20 @@ export default function CTA() {
   };
 
   return (
-    <section id="contact" className="section text-surface bg-[linear-gradient(150deg,#2a241f,#3a3128)]">
+    <section id="contact" className="section text-white bg-[linear-gradient(160deg,#2a525e,#1d3a42)]">
       <div className="container-x grid items-center gap-12 max-[900px]:grid-cols-1 min-[901px]:grid-cols-2">
         <Reveal>
           <p className="eyebrow">Get in touch</p>
-          <h2 className="mb-3 text-[clamp(1.9rem,4vw,3rem)] font-medium tracking-[-0.02em] text-surface">
+          <h2 className="mb-3 text-[clamp(1.9rem,4vw,3rem)] font-bold tracking-[-0.02em] text-white">
             Let&apos;s give your brand a voice.
           </h2>
-          <p className="max-w-[42ch] text-[1.12rem] leading-relaxed text-[#c9bdb0]">
+          <p className="max-w-[42ch] text-[1.12rem] leading-relaxed text-[#aab4d4]">
             Book a free 30-minute strategy call. We&apos;ll talk through your
             goals and show you exactly how we&apos;d help — no pressure, no jargon.
           </p>
-          <p className="mt-5 text-[0.95rem] text-[#c9bdb0]">
+          <p className="mt-5 text-[0.95rem] text-[#aab4d4]">
             Prefer email?{" "}
-            <a href="mailto:hello@cloudmarketing.com" className="text-surface underline underline-offset-2">
+            <a href="mailto:hello@cloudmarketing.com" className="text-white underline underline-offset-2">
               hello@cloudmarketing.com
             </a>
           </p>
@@ -57,7 +57,7 @@ export default function CTA() {
                 name="name"
                 placeholder="Your name"
                 required
-                className="w-full rounded-[10px] border border-white/15 bg-white/[0.06] px-4 py-3.5 text-surface placeholder:text-[#b6a899] focus:border-transparent focus:outline focus:outline-2 focus:outline-[#c9a892]"
+                className="w-full rounded-[10px] border border-white/20 bg-white/[0.06] px-4 py-3.5 text-white placeholder:text-[#8b96b8] focus:border-transparent focus:outline focus:outline-2 focus:outline-brand"
               />
             </div>
             <div className="mb-3.5">
@@ -70,7 +70,7 @@ export default function CTA() {
                 name="email"
                 placeholder="Email address"
                 required
-                className="w-full rounded-[10px] border border-white/15 bg-white/[0.06] px-4 py-3.5 text-surface placeholder:text-[#b6a899] focus:border-transparent focus:outline focus:outline-2 focus:outline-[#c9a892]"
+                className="w-full rounded-[10px] border border-white/20 bg-white/[0.06] px-4 py-3.5 text-white placeholder:text-[#8b96b8] focus:border-transparent focus:outline focus:outline-2 focus:outline-brand"
               />
             </div>
             <div className="mb-3.5">
@@ -82,10 +82,10 @@ export default function CTA() {
                 name="goal"
                 rows={3}
                 placeholder="What do you need help with? (optional)"
-                className="w-full resize-none rounded-[10px] border border-white/15 bg-white/[0.06] px-4 py-3.5 text-surface placeholder:text-[#b6a899] focus:border-transparent focus:outline focus:outline-2 focus:outline-[#c9a892]"
+                className="w-full resize-none rounded-[10px] border border-white/20 bg-white/[0.06] px-4 py-3.5 text-white placeholder:text-[#8b96b8] focus:border-transparent focus:outline focus:outline-2 focus:outline-brand"
               />
             </div>
-            <button type="submit" className="btn btn-block bg-surface text-ink hover:bg-surface-2">
+            <button type="submit" className="btn btn-primary btn-block">
               Book my free call
             </button>
             {message && (
@@ -93,7 +93,7 @@ export default function CTA() {
                 role="status"
                 aria-live="polite"
                 className={`mt-3 text-[0.9rem] ${
-                  status === "success" ? "text-[#cfe8c6]" : "text-[#f2b8a4]"
+                  status === "success" ? "text-[#4ade80]" : "text-[#f87171]"
                 }`}
               >
                 {message}

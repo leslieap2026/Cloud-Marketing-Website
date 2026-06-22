@@ -26,12 +26,11 @@ html {
            transition-transform duration-150 ease-out hover:-translate-y-0.5 no-underline;
   }
   .btn-primary {
-    @apply text-surface shadow-soft;
-    background-color: #2c2620;
+    @apply text-white shadow-soft;
+    background: linear-gradient(135deg, #0cc0df, #264a54);
   }
   .btn-primary:hover {
-    background-color: #3c342c;
-    box-shadow: 0 14px 30px -12px rgba(44, 38, 32, 0.45);
+    box-shadow: 0 14px 30px -10px rgba(12, 192, 223, 0.5);
   }
   .btn-ghost {
     @apply bg-transparent text-ink border-line hover:bg-surface-2;
@@ -54,7 +53,7 @@ html {
   }
 
   .gradient-text {
-    background: linear-gradient(135deg, #fbf8f3, #c9a892);
+    background: linear-gradient(135deg, #ffffff, #22d3ee);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -110,25 +109,25 @@ html {
   }
 }
 
-/* Soft, warm hero background — a gentle drifting cream/blush wash */
+/* Animated, colorful hero background */
 .hero-aurora {
-  background: linear-gradient(120deg, #fbf8f3, #f6ece0, #f3e3d6, #f7efe6, #fbf8f3);
-  background-size: 280% 280%;
-  animation: auroraShift 22s ease infinite;
+  background: linear-gradient(120deg, #1b3a8f, #1e6fff, #0cc0df, #0aa3bd, #1e6fff);
+  background-size: 300% 300%;
+  animation: auroraShift 16s ease infinite;
 }
 /* Subtle dot-grid texture overlay */
 .hero-grid {
-  background-image: radial-gradient(rgba(176, 135, 106, 0.18) 1px, transparent 1px);
-  background-size: 24px 24px;
-  -webkit-mask-image: radial-gradient(120% 90% at 50% 0%, #000 35%, transparent 72%);
-  mask-image: radial-gradient(120% 90% at 50% 0%, #000 35%, transparent 72%);
+  background-image: radial-gradient(rgba(255, 255, 255, 0.22) 1px, transparent 1px);
+  background-size: 22px 22px;
+  -webkit-mask-image: radial-gradient(120% 90% at 50% 0%, #000 40%, transparent 75%);
+  mask-image: radial-gradient(120% 90% at 50% 0%, #000 40%, transparent 75%);
 }
 /* Typewriter caret */
 .typed-caret {
   display: inline-block;
-  margin-left: 2px;
+  margin-left: 1px;
   font-weight: 300;
-  color: #b0876a;
+  color: #bff4ff;
   animation: caretBlink 1s step-end infinite;
 }
 
@@ -175,7 +174,7 @@ html {
   bottom: -4px;
   height: 2px;
   width: 100%;
-  background: #b0876a;
+  background: #0cc0df;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.25s ease;

@@ -32,13 +32,13 @@ export default function Solutions() {
         </Reveal>
 
         <Reveal delay={140} className="mx-auto mt-14 max-w-[860px]">
-          <figure className="rounded-card bg-[linear-gradient(150deg,#2a241f,#3a3128)] px-8 py-14 text-center text-surface md:px-16">
-            <blockquote className="text-[clamp(1.5rem,3.2vw,2.3rem)] font-medium leading-[1.25] tracking-[-0.01em]">
+          <figure className="rounded-card bg-[linear-gradient(160deg,#2a525e,#1d3a42)] px-8 py-14 text-center text-white md:px-16">
+            <blockquote className="text-[clamp(1.5rem,3.2vw,2.3rem)] font-bold leading-[1.25] tracking-[-0.01em]">
               &ldquo;The same way clouds are everywhere,
               <br className="hidden sm:block" /> your brand can be too.&rdquo;
             </blockquote>
             <figcaption className="mt-7">
-              <a href="#contact" className="btn btn-primary bg-surface !text-ink hover:bg-surface-2">
+              <a href="#contact" className="btn bg-white text-ink hover:bg-surface-2">
                 Let&apos;s give it a voice
               </a>
             </figcaption>
