@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import Reveal from "./Reveal";
 
@@ -7,19 +8,14 @@ export function HomeIntro() {
     <section className="section">
       <div className="container-x grid items-center gap-12 max-[900px]:grid-cols-1 min-[901px]:grid-cols-[1fr_1.3fr]">
         <Reveal>
-          {/* Swap this placeholder for a photo: put it in public/ and use <img src="/your-photo.jpg" ... /> */}
-          <div
-            className="mx-auto grid aspect-[4/5] w-full max-w-[360px] place-items-center rounded-card bg-[linear-gradient(160deg,#eef3fc,#d7eef4)] text-brand"
-            aria-hidden="true"
-          >
-            <svg width="96" height="96" viewBox="0 0 24 24" fill="none">
-              <path
-                d="M6.5 19a4.5 4.5 0 0 1-.5-8.97A6 6 0 0 1 17.7 9.2a3.9 3.9 0 0 1-.2 9.8H6.5Z"
-                fill="currentColor"
-                opacity=".35"
-              />
-            </svg>
-          </div>
+          <Image
+            src="/home-workspace.jpg"
+            alt="Laptops, phones and notebooks around a table during a marketing planning session"
+            width={736}
+            height={1104}
+            sizes="(max-width: 900px) 360px, 400px"
+            className="mx-auto aspect-[4/5] w-full max-w-[400px] rounded-card object-cover shadow-card"
+          />
         </Reveal>
         <Reveal delay={120}>
           <p className="eyebrow">Hi there</p>
