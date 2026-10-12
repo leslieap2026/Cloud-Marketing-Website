@@ -10,20 +10,18 @@ A modern, responsive marketing website for Cloud Marketing LLC, built with
 - Tailwind CSS 3 for styling (design tokens in `tailwind.config.ts`)
 - `next/font` for self-hosted Poppins (headings), with a Helvetica Neue body stack
 
-## Sections
+## Pages
 
-The page reads in a first-person, freelancer voice:
+The site reads in a first-person, freelancer voice and is split into pages:
 
-1. **Hero** — value proposition + primary call to action, with a campaign-performance visual
-2. **Services** — four outcome-framed offerings
-3. **Results** — social proof: results stats + client testimonials
-4. **About** — founder story and principles
-5. **Process** — a four-step "how it works"
-6. **Primary CTA / Contact** — book-a-call form
-7. **Footer** — contact, socials, and navigation
+1. **Home** (`/`) — hero, a services preview, results + testimonials, book-a-call form
+2. **Services** (`/services`) — the four one-time services
+3. **About** (`/about`) — founder story
+4. **Process** (`/process`) — a four-step "how it works"
+5. **Blog** (`/blog`) — placeholder until the first posts are written
 
-Other niceties: responsive layout, sticky header with mobile nav, scroll-reveal
-animations (with `prefers-reduced-motion` support), and accessible markup.
+The header and footer live in `app/layout.tsx`, and every page ends with the
+book-a-call form (`#contact`).
 
 ## Project structure
 

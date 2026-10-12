@@ -53,7 +53,7 @@ const services = [
   },
 ];
 
-export default function Services() {
+export default function Services({ preview = false }: { preview?: boolean }) {
   return (
     <section id="services" className="section">
       <div className="container-x">
@@ -77,6 +77,13 @@ export default function Services() {
             </Reveal>
           ))}
         </div>
+        {preview && (
+          <div className="mt-10 text-center">
+            <a href="/services" className="btn btn-ghost">
+              See how each service works
+            </a>
+          </div>
+        )}
       </div>
     </section>
   );

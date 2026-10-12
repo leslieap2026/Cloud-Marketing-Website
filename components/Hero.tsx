@@ -48,7 +48,7 @@ export default function Hero() {
           <a href="#contact" className="btn bg-white text-ink shadow-soft hover:bg-white">
             Book a free call with me
           </a>
-          <a href="#about" className="btn border-white/60 bg-transparent text-white hover:bg-white/10">
+          <a href="/about" className="btn border-white/60 bg-transparent text-white hover:bg-white/10">
             My story
           </a>
         </div>
