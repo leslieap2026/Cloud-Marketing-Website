@@ -14,7 +14,7 @@ A modern, responsive marketing website for Cloud Marketing LLC, built with
 
 The site reads in a first-person, freelancer voice and is split into pages:
 
-1. **Home** (`/`) — hero only
+1. **Home** (`/`) — hero, short intro, service tiles, a featured quote and a call banner, each linking to its page
 2. **Services** (`/services`) — the four one-time services
 3. **About** (`/about`) — founder story, results + testimonials
 4. **Process** (`/process`) — a four-step "how it works"
