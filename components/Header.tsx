@@ -50,7 +50,7 @@ export default function Header() {
               {l.label}
             </Link>
           ))}
-          <a href="#contact" className="btn btn-primary btn-sm">
+          <a href="/contact" className="btn btn-primary btn-sm">
             Book a call
           </a>
         </nav>
@@ -85,7 +85,7 @@ export default function Header() {
               {l.label}
             </Link>
           ))}
-          <a href="#contact" onClick={close} className="btn btn-primary mt-2">
+          <a href="/contact" onClick={close} className="btn btn-primary mt-2">
             Book a call
           </a>
         </nav>

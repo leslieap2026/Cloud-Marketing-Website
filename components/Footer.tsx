@@ -39,7 +39,7 @@ export default function Footer() {
           <p className="mt-3 max-w-[32ch] leading-relaxed text-[#94a3b8]">
             I close the gap between a great product and the audience it deserves.
           </p>
-          <a href="#contact" className="btn btn-primary btn-sm mt-6">
+          <a href="/contact" className="btn btn-primary btn-sm mt-6">
             Book a call
           </a>
         </div>

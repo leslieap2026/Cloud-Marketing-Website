@@ -14,14 +14,15 @@ A modern, responsive marketing website for Cloud Marketing LLC, built with
 
 The site reads in a first-person, freelancer voice and is split into pages:
 
-1. **Home** (`/`) — hero, a services preview, results + testimonials, book-a-call form
+1. **Home** (`/`) — hero only
 2. **Services** (`/services`) — the four one-time services
-3. **About** (`/about`) — founder story
+3. **About** (`/about`) — founder story, results + testimonials
 4. **Process** (`/process`) — a four-step "how it works"
 5. **Blog** (`/blog`) — placeholder until the first posts are written
+6. **Contact** (`/contact`) — book-a-call form, linked from every "Book a call" button
 
-The header and footer live in `app/layout.tsx`, and every page ends with the
-book-a-call form (`#contact`).
+The header and footer live in `app/layout.tsx`. Every page except Home ends
+with the book-a-call form (`#contact`).
 
 ## Project structure
 

@@ -2,7 +2,7 @@ import TypedText from "./TypedText";
 
 export default function Hero() {
   return (
-    <section className="hero-aurora relative overflow-hidden pb-24 pt-24 text-white">
+    <section className="hero-aurora relative flex min-h-[calc(100svh-68px)] items-center overflow-hidden py-24 text-white">
       {/* Background video — drop your clip in at public/hero.mp4 (muted, loops) */}
       <video
         className="absolute inset-0 z-0 h-full w-full object-cover"
@@ -45,7 +45,7 @@ export default function Hero() {
           className="anim-up my-8 flex flex-wrap justify-center gap-3.5"
           style={{ animationDelay: "240ms" }}
         >
-          <a href="#contact" className="btn bg-white text-ink shadow-soft hover:bg-white">
+          <a href="/contact" className="btn bg-white text-ink shadow-soft hover:bg-white">
             Book a free call with me
           </a>
           <a href="/about" className="btn border-white/60 bg-transparent text-white hover:bg-white/10">

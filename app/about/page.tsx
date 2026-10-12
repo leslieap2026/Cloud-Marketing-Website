@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Solutions from "@/components/Solutions";
+import Testimonials from "@/components/Testimonials";
 import CTA from "@/components/CTA";
 
 export const metadata: Metadata = {
@@ -11,6 +12,7 @@ export default function AboutPage() {
   return (
     <>
       <Solutions />
+      <Testimonials />
       <CTA />
     </>
   );
