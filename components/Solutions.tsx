@@ -5,7 +5,7 @@ export default function Solutions() {
     <section id="about" className="section">
       <div className="container-x">
         <Reveal className="mx-auto max-w-[760px] text-center">
-          <p className="eyebrow">Our why</p>
+          <p className="eyebrow">My story</p>
           <h2 className="mb-8 text-[clamp(1.9rem,4vw,3rem)] font-medium leading-[1.12] tracking-[-0.02em]">
             Built for women who build.
           </h2>
@@ -17,16 +17,17 @@ export default function Solutions() {
               as a woman is already an act of courage. It deserves to be seen.
             </p>
             <p>
-              Small businesses fail every day — not because the product isn&apos;t
+              Small businesses fail every day, not because the product isn&apos;t
               good enough, but because the world never found out about it. A great
               product sitting in silence is still a great product. It just needs a
-              voice. That is exactly what we provide.
+              voice. That&apos;s why I started Cloud Marketing.
             </p>
             <p>
-              We work exclusively with women-owned CPG brands because we understand
-              the unique weight of building in this space. We&apos;re not a
-              generalist agency trying to serve everyone — we&apos;re built for you,
-              specifically.
+              I&apos;m not an agency, and I don&apos;t hand you off to a junior team.
+              It&apos;s just me. I work only with women-owned CPG brands because I
+              understand the weight of building in this space, and I&apos;d rather
+              go deep with a few founders than try to serve everyone. When you work
+              with me, you get me.
             </p>
           </div>
         </Reveal>

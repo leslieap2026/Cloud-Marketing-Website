@@ -4,7 +4,7 @@ import Reveal from "./Reveal";
 const services = [
   {
     title: "Social Media Management",
-    body: "We handle the content, the calendar, and the community — turning your feed into a place the right people want to follow, trust, and buy from.",
+    body: "I take care of the content, the calendar, and the community, and turn your feed into a place the right people want to follow, trust, and buy from.",
     icon: (
       <path
         d="M5 6.5A2.5 2.5 0 0 1 7.5 4h9A2.5 2.5 0 0 1 19 6.5v6A2.5 2.5 0 0 1 16.5 15H10l-4 4v-4h-.5A.5.5 0 0 1 5 14.5z"
@@ -17,7 +17,7 @@ const services = [
   },
   {
     title: "Email Marketing",
-    body: "We craft email flows and campaigns that nurture new subscribers into loyal, repeat customers — an audience you own, not one you rent.",
+    body: "I write the email flows and campaigns that turn new subscribers into loyal, repeat customers. It's an audience you own, not one you rent.",
     icon: (
       <>
         <rect x="4" y="6" width="16" height="12" rx="2.5" fill="none" stroke="currentColor" strokeWidth="1.4" />
@@ -27,7 +27,7 @@ const services = [
   },
   {
     title: "Brand Storytelling",
-    body: "We help you say what makes you you — clearly and consistently — so the right audience feels it the moment they find you.",
+    body: "I help you put into words what makes you you, clearly and consistently, so the right people feel it the moment they find you.",
     icon: (
       <path
         d="M12 4l2.2 4.6 5 .6-3.7 3.4 1 4.9L12 15.8 7.5 18l1-4.9L4.8 9.7l5-.6z"
@@ -45,9 +45,9 @@ export default function Services() {
     <section id="services" className="section">
       <div className="container-x">
         <SectionHead
-          eyebrow="What we do"
+          eyebrow="What I do"
           title="Social and email, working as one"
-          sub="We combine the two channels that matter most for early-stage CPG brands into a single, cohesive strategy — built to grow awareness, an engaged audience, and customers who keep coming back."
+          sub="I focus on the two channels that matter most for early-stage CPG brands and run them as one plan, built to grow awareness, an engaged audience, and customers who keep coming back."
         />
         <div className="grid grid-cols-3 gap-6 max-[720px]:grid-cols-1">
           {services.map((s, i) => (

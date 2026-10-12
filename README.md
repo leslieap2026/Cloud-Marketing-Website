@@ -12,7 +12,7 @@ A modern, responsive marketing website for Cloud Marketing LLC, built with
 
 ## Sections
 
-The page follows a marketing-agency narrative:
+The page reads in a first-person, freelancer voice:
 
 1. **Hero** — value proposition + primary call to action, with a campaign-performance visual
 2. **Services** — four outcome-framed offerings
@@ -36,7 +36,7 @@ animations (with `prefers-reduced-motion` support), and accessible markup.
 ├── components/
 │   ├── Header.tsx       # "use client" — mobile nav
 │   ├── Hero.tsx
-│   ├── Logos.tsx        # client logo strip
+│   ├── Logos.tsx        # client logo strip (not currently on the page)
 │   ├── SectionHead.tsx
 │   ├── Services.tsx
 │   ├── Testimonials.tsx # results stats + testimonials

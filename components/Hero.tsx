@@ -36,30 +36,30 @@ export default function Hero() {
           className="anim-up mx-auto max-w-[52ch] text-[1.2rem] leading-relaxed text-white/85"
           style={{ animationDelay: "160ms" }}
         >
-          Cloud Marketing is a studio built exclusively for women-owned brands in
-          consumer products. We blend social media and email into one cohesive
-          strategy — so the right people finally discover what you&apos;ve made.
+          I&apos;m a freelance marketer who works only with women-owned brands in
+          consumer products. I bring your social media and email together into
+          one strategy, so the right people finally discover what you&apos;ve made.
         </p>
         <div
           className="anim-up my-8 flex flex-wrap justify-center gap-3.5"
           style={{ animationDelay: "240ms" }}
         >
           <a href="#contact" className="btn bg-white text-ink shadow-soft hover:bg-white">
-            Book a free strategy call
+            Book a free call with me
           </a>
           <a href="#about" className="btn border-white/60 bg-transparent text-white hover:bg-white/10">
-            Our story
+            My story
           </a>
         </div>
         <ul
           className="anim-up flex flex-wrap justify-center gap-x-7 gap-y-2 text-[0.92rem] text-white/80"
           style={{ animationDelay: "320ms" }}
         >
-          <li>Women-owned, exclusively</li>
+          <li>Women-owned brands only</li>
           <li aria-hidden="true">·</li>
           <li>Social + email, in sync</li>
           <li aria-hidden="true">·</li>
-          <li>Strategy built for you</li>
+          <li>One person, start to finish</li>
         </ul>
       </div>
     </section>

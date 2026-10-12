@@ -2,16 +2,15 @@ const cols = [
   {
     title: "Services",
     links: [
-      ["Brand & Positioning", "#services"],
-      ["Content & Social", "#services"],
-      ["Paid Advertising", "#services"],
-      ["Websites & Funnels", "#services"],
+      ["Social Media Management", "#services"],
+      ["Email Marketing", "#services"],
+      ["Brand Storytelling", "#services"],
     ],
   },
   {
-    title: "Studio",
+    title: "About",
     links: [
-      ["About", "#about"],
+      ["My story", "#about"],
       ["Process", "#process"],
       ["Results", "#results"],
     ],
@@ -35,7 +34,7 @@ export default function Footer() {
             Cloud <span className="text-brand">Marketing</span>
           </a>
           <p className="mt-3 max-w-[32ch] leading-relaxed text-[#94a3b8]">
-            We close the gap between a great product and the audience it deserves.
+            I close the gap between a great product and the audience it deserves.
           </p>
           <a href="#contact" className="btn btn-primary btn-sm mt-6">
             Book a call

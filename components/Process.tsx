@@ -5,22 +5,22 @@ const steps = [
   {
     num: "01",
     title: "Discovery call",
-    body: "We hop on a free 30-minute call to understand your goals, your market, and whether we're the right fit. No pressure, no pitch deck.",
+    body: "We hop on a free 30-minute call so I can hear about your goals, your market, and whether I'm the right fit. No pressure, no pitch deck.",
   },
   {
     num: "02",
-    title: "On-Boarding Process & Proposal",
-    body: "We audit where you are today and build a clear, prioritized plan mapped directly to the outcomes you want to hit.",
+    title: "Onboarding & proposal",
+    body: "I look at where you are today and put together a clear, prioritized plan tied to the outcomes you want to hit.",
   },
   {
     num: "03",
     title: "Execution",
-    body: "We get to work — brand, content, campaigns, funnels — with you looped in at every step and zero mystery about what's happening.",
+    body: "I get to work on your content, emails, and campaigns, and keep you looped in at every step so there's never any mystery about what's happening.",
   },
   {
     num: "04",
     title: "Optimize & grow",
-    body: "We measure what's working, double down on it, and keep compounding your results month over month.",
+    body: "Together we look at what's working, double down on it, and keep building on your results month over month.",
   },
 ];
 
@@ -31,7 +31,7 @@ export default function Process() {
         <SectionHead
           eyebrow="Process"
           title="How working together works"
-          sub="A simple, proven path from first call to real growth — no mystery, no bloat."
+          sub="A simple path from our first call to real growth. You'll always know what I'm working on and why."
         />
         <div className="grid grid-cols-4 gap-[22px] max-[900px]:grid-cols-2 max-[560px]:grid-cols-1">
           {steps.map((s, i) => (

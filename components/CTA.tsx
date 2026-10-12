@@ -16,12 +16,12 @@ export default function CTA() {
 
     if (!name || !emailOk) {
       setStatus("error");
-      setMessage("Please add your name and a valid email so we can reach you.");
+      setMessage("Please add your name and a valid email so I can reach you.");
       return;
     }
 
     setStatus("success");
-    setMessage(`Thanks, ${name}! We'll email ${email} within one business day to set up your call.`);
+    setMessage(`Thanks, ${name}! I'll email ${email} within one business day to set up our call.`);
     form.reset();
   };
 
@@ -34,8 +34,9 @@ export default function CTA() {
             Let&apos;s give your brand a voice.
           </h2>
           <p className="max-w-[42ch] text-[1.12rem] leading-relaxed text-[#aab4d4]">
-            Book a free 30-minute strategy call. We&apos;ll talk through your
-            goals and show you exactly how we&apos;d help — no pressure, no jargon.
+            Book a free 30-minute call with me. We&apos;ll talk through your
+            goals and I&apos;ll show you exactly how I&apos;d help. No pressure,
+            no jargon.
           </p>
           <p className="mt-5 text-[0.95rem] text-[#aab4d4]">
             Prefer email?{" "}
