@@ -2,30 +2,30 @@ import SectionHead from "./SectionHead";
 import Reveal from "./Reveal";
 
 const results = [
-  { num: "120+", label: "Brands grown" },
-  { num: "4.1x", label: "Average return on ad spend" },
-  { num: "$48M", label: "Revenue driven for clients" },
-  { num: "12 yrs", label: "In the marketing trenches" },
+  { num: "1", label: "Person you work with, start to finish" },
+  { num: "4", label: "One-time services, no long contracts" },
+  { num: "100%", label: "Women-owned brands" },
+  { num: "30 min", label: "Free first call" },
 ];
 
 const quotes = [
   {
     quote:
       "Within six months our inbound leads tripled and we finally had a brand that felt like us. It's the best investment we've made.",
-    initials: "AK",
+    initials: "BW",
     name: "Brittani Washington",
     role: "Brit Services Consulting LLC.",
   },
   {
     quote:
-      "They treated our budget like their own. Every dollar of ad spend was accounted for — and our ROAS climbed from 1.8x to 4.3x.",
+      "Every dollar of our budget was treated like it mattered, and our ROAS climbed from 1.8x to 4.3x.",
     initials: "DM",
     name: "Diego Morales",
     role: "CMO, Northpeak",
   },
   {
     quote:
-      "It feels like having a senior marketing team on staff, minus the overhead. Responsive, sharp, and genuinely invested in our growth.",
+      "It feels like having a senior marketer on the team, minus the overhead. Responsive, sharp, and genuinely invested in our growth.",
     initials: "RP",
     name: "Rina Patel",
     role: "CEO, Lumen Studio",
@@ -38,8 +38,8 @@ export default function Testimonials() {
       <div className="container-x">
         <SectionHead
           eyebrow="Results"
-          title="Results that speak louder than promises"
-          sub="We measure our work the same way you do — in revenue, leads, and growth you can take to the bank."
+          title="Kind words from the founders I work with"
+          sub="I measure my work the same way you do: in sales, subscribers, and growth you can actually feel."
         />
 
         {/* Results band */}

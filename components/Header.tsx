@@ -1,17 +1,20 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
-  { href: "#services", label: "Services" },
-  { href: "#results", label: "Results" },
-  { href: "#about", label: "About" },
-  { href: "#process", label: "Process" },
+  { href: "/services", label: "Services" },
+  { href: "/about", label: "About" },
+  { href: "/process", label: "Process" },
+  { href: "/blog", label: "Blog" },
 ];
 
 export default function Header() {
   const [open, setOpen] = useState(false);
   const close = () => setOpen(false);
+  const pathname = usePathname();
 
   return (
     <header
@@ -19,7 +22,7 @@ export default function Header() {
       className="sticky top-0 z-50 border-b border-line bg-white/85 backdrop-blur-md"
     >
       <div className="container-x flex h-[68px] items-center justify-between">
-        <a href="#top" className="flex items-center gap-2 font-heading text-[1.2rem] font-extrabold text-ink no-underline">
+        <Link href="/" className="flex items-center gap-2 font-heading text-[1.2rem] font-extrabold text-ink no-underline">
           <span className="text-brand">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path
@@ -31,20 +34,23 @@ export default function Header() {
           <span>
             Cloud <span className="text-brand">Marketing</span>
           </span>
-        </a>
+        </Link>
 
         {/* Desktop nav */}
         <nav className="hidden items-center gap-6 min-[721px]:flex" aria-label="Primary">
           {navLinks.map((l) => (
-            <a
+            <Link
               key={l.href}
               href={l.href}
-              className="nav-link font-medium text-ink-soft no-underline hover:text-ink"
+              aria-current={pathname === l.href ? "page" : undefined}
+              className={`nav-link font-medium no-underline hover:text-ink ${
+                pathname === l.href ? "text-ink" : "text-ink-soft"
+              }`}
             >
               {l.label}
-            </a>
+            </Link>
           ))}
-          <a href="#contact" className="btn btn-primary btn-sm">
+          <a href="/contact" className="btn btn-primary btn-sm">
             Book a call
           </a>
         </nav>
@@ -69,11 +75,17 @@ export default function Header() {
           aria-label="Mobile"
         >
           {navLinks.map((l) => (
-            <a key={l.href} href={l.href} onClick={close} className="py-3 font-medium text-ink-soft no-underline">
+            <Link
+              key={l.href}
+              href={l.href}
+              onClick={close}
+              aria-current={pathname === l.href ? "page" : undefined}
+              className={`py-3 font-medium no-underline ${pathname === l.href ? "text-ink" : "text-ink-soft"}`}
+            >
               {l.label}
-            </a>
+            </Link>
           ))}
-          <a href="#contact" onClick={close} className="btn btn-primary mt-2">
+          <a href="/contact" onClick={close} className="btn btn-primary mt-2">
             Book a call
           </a>
         </nav>

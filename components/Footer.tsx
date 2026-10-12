@@ -1,19 +1,21 @@
+import Link from "next/link";
+
 const cols = [
   {
     title: "Services",
     links: [
-      ["Brand & Positioning", "#services"],
-      ["Content & Social", "#services"],
-      ["Paid Advertising", "#services"],
-      ["Websites & Funnels", "#services"],
+      ["Website Creation", "/services"],
+      ["Social Media Management", "/services"],
+      ["Marketing Consultation", "/services"],
+      ["Marketing Audits", "/services"],
     ],
   },
   {
-    title: "Studio",
+    title: "About",
     links: [
-      ["About", "#about"],
-      ["Process", "#process"],
-      ["Results", "#results"],
+      ["My story", "/about"],
+      ["Process", "/process"],
+      ["Blog", "/blog"],
     ],
   },
   {
@@ -31,13 +33,13 @@ export default function Footer() {
     <footer className="bg-bg px-0 pb-7 pt-16 text-[#cbd5e1]">
       <div className="container-x grid gap-10 border-b border-white/10 pb-10 max-[720px]:grid-cols-1 min-[721px]:grid-cols-[1.4fr_2fr]">
         <div>
-          <a href="#top" className="font-heading text-[1.35rem] font-extrabold text-white no-underline">
+          <Link href="/" className="font-heading text-[1.35rem] font-extrabold text-white no-underline">
             Cloud <span className="text-brand">Marketing</span>
-          </a>
+          </Link>
           <p className="mt-3 max-w-[32ch] leading-relaxed text-[#94a3b8]">
-            We close the gap between a great product and the audience it deserves.
+            I close the gap between a great product and the audience it deserves.
           </p>
-          <a href="#contact" className="btn btn-primary btn-sm mt-6">
+          <a href="/contact" className="btn btn-primary btn-sm mt-6">
             Book a call
           </a>
         </div>

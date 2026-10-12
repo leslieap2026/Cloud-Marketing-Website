@@ -115,6 +115,25 @@ html {
   background-size: 300% 300%;
   animation: auroraShift 18s ease infinite;
 }
+/* Home hero: a deep evening-blue sky that softens toward the horizon */
+.hero-sky {
+  background: linear-gradient(180deg, #16304f 0%, #24507e 38%, #4f82b4 70%, #9fc3e3 100%);
+}
+.hero-clouds .cloud {
+  position: absolute;
+  border-radius: 9999px;
+  background: radial-gradient(closest-side, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0));
+  filter: blur(6px);
+  animation: cloudDrift 60s linear infinite alternate;
+}
+.hero-clouds .cloud-1 { width: 70vw; height: 22vw; left: -20vw; bottom: -6vw; }
+.hero-clouds .cloud-2 { width: 55vw; height: 18vw; right: -18vw; bottom: 2vw; animation-duration: 75s; }
+.hero-clouds .cloud-3 { width: 40vw; height: 12vw; left: 30vw; bottom: -4vw; opacity: 0.8; animation-duration: 90s; }
+.hero-clouds .cloud-4 { width: 30vw; height: 9vw; left: 5vw; top: 14%; opacity: 0.35; animation-duration: 110s; }
+@keyframes cloudDrift {
+  from { transform: translateX(-3vw); }
+  to { transform: translateX(3vw); }
+}
 /* Subtle dot-grid texture overlay */
 .hero-grid {
   background-image: radial-gradient(rgba(21, 95, 176, 0.12) 1px, transparent 1px);
@@ -193,6 +212,7 @@ html {
   .orb-float-2,
   .bar,
   .hero-aurora,
+  .hero-clouds .cloud,
   .typed-caret {
     animation: none !important;
     transition: none !important;
