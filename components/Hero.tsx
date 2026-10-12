@@ -37,9 +37,9 @@ export default function Hero() {
           style={{ animationDelay: "160ms" }}
         >
           I&apos;m a freelance marketer who understands what small brands need.
-          I bring your social media and email together into one strategy, so
-          the right people finally discover what you&apos;ve made, without the
-          agency price tag.
+          From websites to social media, I start with strategy so the right
+          people finally discover what you&apos;ve made, without the agency
+          price tag.
         </p>
         <div
           className="anim-up my-8 flex flex-wrap justify-center gap-3.5"
@@ -58,7 +58,7 @@ export default function Hero() {
         >
           <li>Women-owned brands only</li>
           <li aria-hidden="true">·</li>
-          <li>Social + email, in sync</li>
+          <li>Based in Charlotte, working anywhere</li>
           <li aria-hidden="true">·</li>
           <li>One person, start to finish</li>
         </ul>

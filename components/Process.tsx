@@ -15,12 +15,12 @@ const steps = [
   {
     num: "03",
     title: "Execution",
-    body: "I get to work on your content, emails, and campaigns, and keep you looped in at every step so there's never any mystery about what's happening.",
+    body: "I get to work on your project and keep you looped in at every step, so there's never any mystery about what's happening.",
   },
   {
     num: "04",
-    title: "Optimize & grow",
-    body: "Together we look at what's working, double down on it, and keep building on your results month over month.",
+    title: "Hand-off & next steps",
+    body: "I walk you through everything I made or found, and leave you with clear next steps so you can keep growing.",
   },
 ];
 

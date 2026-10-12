@@ -36,7 +36,8 @@ export default function CTA() {
           <p className="max-w-[42ch] text-[1.12rem] leading-relaxed text-[#aab4d4]">
             Book a free 30-minute call with me. We&apos;ll talk through your
             goals and I&apos;ll show you exactly how I&apos;d help. No pressure,
-            no jargon.
+            no jargon. I&apos;m based in Charlotte and happy to work with
+            brands anywhere.
           </p>
           <p className="mt-5 text-[0.95rem] text-[#aab4d4]">
             Prefer email?{" "}

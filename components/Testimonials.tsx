@@ -3,7 +3,7 @@ import Reveal from "./Reveal";
 
 const results = [
   { num: "1", label: "Person you work with, start to finish" },
-  { num: "2", label: "Channels, social + email, in sync" },
+  { num: "4", label: "One-time services, no long contracts" },
   { num: "100%", label: "Women-owned brands" },
   { num: "30 min", label: "Free first call" },
 ];

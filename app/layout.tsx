@@ -17,9 +17,9 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "Cloud Marketing LLC — Social & email marketing for women-owned CPG brands",
+  title: "Cloud Marketing LLC — Your marketing partner for women-owned CPG brands",
   description:
-    "I'm your marketing partner at Cloud Marketing, a freelancer working only with women-owned CPG brands. I bring your social media and email together into one strategy that grows awareness, an engaged audience, and customers who come back.",
+    "I'm your marketing partner at Cloud Marketing, a freelancer working only with women-owned CPG brands. Based in Charlotte, I offer website creation, social media management, marketing consultations, and marketing audits as one-time projects.",
 };
 
 export default function RootLayout({

@@ -2,9 +2,10 @@ const cols = [
   {
     title: "Services",
     links: [
+      ["Website Creation", "#services"],
       ["Social Media Management", "#services"],
-      ["Email Marketing", "#services"],
-      ["Brand Storytelling", "#services"],
+      ["Marketing Consultation", "#services"],
+      ["Marketing Audits", "#services"],
     ],
   },
   {
