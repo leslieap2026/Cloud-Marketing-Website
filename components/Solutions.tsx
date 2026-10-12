@@ -23,8 +23,18 @@ export default function Solutions() {
               voice. That&apos;s why I started Cloud Marketing.
             </p>
             <p>
-              I&apos;m not an agency, and I don&apos;t hand you off to a junior team.
-              It&apos;s just me. I work only with women-owned CPG brands because I
+              My own start in marketing came from making opportunities where
+              there weren&apos;t any. In college I couldn&apos;t land an
+              internship, so I stopped waiting for one. I reached out to people
+              who needed help, did the work, and found out how much I love
+              creating. That&apos;s still how I work today: hands-on, scrappy, and
+              all in on your brand.
+            </p>
+            <p>
+              Hiring a big agency is often expensive, and it doesn&apos;t
+              guarantee they&apos;ll get your vision. I&apos;m not an agency, and
+              I don&apos;t hand you off to a junior team. I&apos;m your marketing
+              partner. I work only with women-owned CPG brands because I
               understand the weight of building in this space, and I&apos;d rather
               go deep with a few founders than try to serve everyone. When you work
               with me, you get me.

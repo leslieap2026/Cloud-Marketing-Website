@@ -24,7 +24,7 @@ export default function Hero() {
 
       <div className="container-x relative z-[2] flex flex-col items-center text-center">
         <p className="anim-up mb-4 text-[0.78rem] font-bold uppercase tracking-[0.2em] text-white/85">
-          Marketing for women-owned CPG brands
+          Your marketing partner for women-owned CPG brands
         </p>
         <h1
           className="anim-up font-display mx-auto mb-6 max-w-[18ch] text-[clamp(2.8rem,6.5vw,5rem)] font-semibold leading-[1.07] tracking-[-0.01em] text-white"
@@ -36,9 +36,10 @@ export default function Hero() {
           className="anim-up mx-auto max-w-[52ch] text-[1.2rem] leading-relaxed text-white/85"
           style={{ animationDelay: "160ms" }}
         >
-          I&apos;m a freelance marketer who works only with women-owned brands in
-          consumer products. I bring your social media and email together into
-          one strategy, so the right people finally discover what you&apos;ve made.
+          I&apos;m a freelance marketer who understands what small brands need.
+          I bring your social media and email together into one strategy, so
+          the right people finally discover what you&apos;ve made, without the
+          agency price tag.
         </p>
         <div
           className="anim-up my-8 flex flex-wrap justify-center gap-3.5"
