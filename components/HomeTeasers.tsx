@@ -1,12 +1,6 @@
 import Link from "next/link";
 import Reveal from "./Reveal";
 
-const services = [
-  { title: "Website Creation", body: "Strategy first, so your site has a clear direction." },
-  { title: "Social Media Management", body: "Content, calendar and community, handled." },
-  { title: "Marketing Consultation", body: "Ideas to scale and reach the right customers." },
-  { title: "Marketing Audits", body: "What's working on your site or socials, and what to fix." },
-];
 
 export function HomeIntro() {
   return (
@@ -44,39 +38,6 @@ export function HomeIntro() {
             Read my story
           </Link>
         </Reveal>
-      </div>
-    </section>
-  );
-}
-
-export function HomeServices() {
-  return (
-    <section className="section bg-surface-2">
-      <div className="container-x">
-        <Reveal className="mx-auto mb-12 max-w-[640px] text-center">
-          <p className="eyebrow">How I can help</p>
-          <h2 className="text-[clamp(1.7rem,3.5vw,2.6rem)] font-medium tracking-[-0.02em]">
-            One-time projects, built around your goals
-          </h2>
-        </Reveal>
-        <div className="grid grid-cols-4 gap-5 max-[900px]:grid-cols-2 max-[560px]:grid-cols-1">
-          {services.map((s, i) => (
-            <Reveal key={s.title} delay={i * 80}>
-              <Link
-                href="/services"
-                className="block h-full rounded-card border border-line bg-surface p-7 text-ink no-underline transition-all duration-300 hover:-translate-y-1 hover:shadow-card"
-              >
-                <h3 className="mb-2 text-[1.1rem] font-medium">{s.title}</h3>
-                <p className="text-[0.95rem] leading-relaxed text-ink-soft">{s.body}</p>
-              </Link>
-            </Reveal>
-          ))}
-        </div>
-        <div className="mt-10 text-center">
-          <Link href="/services" className="btn btn-ghost">
-            See all services
-          </Link>
-        </div>
       </div>
     </section>
   );
