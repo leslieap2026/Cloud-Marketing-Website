@@ -8,13 +8,11 @@ export default function Hero() {
         src="/hero-skyline.jpg"
         alt=""
         aria-hidden="true"
-        className="hero-photo absolute inset-x-0 bottom-0 z-0 h-[62%] w-full object-cover object-bottom"
+        className="hero-photo absolute inset-x-0 bottom-0 z-0 h-[58%] w-full object-cover object-bottom"
       />
 
-      {/* Soft drifting clouds, drifting over the base of the skyline */}
+      {/* Soft drifting clouds */}
       <div className="hero-clouds absolute inset-0 z-0" aria-hidden="true">
-        <span className="cloud cloud-1" />
-        <span className="cloud cloud-2" />
         <span className="cloud cloud-3" />
         <span className="cloud cloud-4" />
       </div>
@@ -36,7 +34,7 @@ export default function Hero() {
           <TypedText text="Your product deserves to be seen." speed={55} />
         </h1>
         <p
-          className="anim-up mx-auto max-w-[52ch] text-[1.2rem] leading-relaxed text-white/90"
+          className="anim-up mx-auto max-w-[52ch] text-[1.2rem] leading-relaxed text-white/90 [text-shadow:0_1px_10px_rgba(14,40,48,0.75)]"
           style={{ animationDelay: "160ms" }}
         >
           I&apos;m a freelance marketer who understands what small brands need.
@@ -56,7 +54,7 @@ export default function Hero() {
           </a>
         </div>
         <ul
-          className="anim-up flex flex-wrap justify-center gap-x-7 gap-y-2 text-[0.92rem] text-white/85"
+          className="anim-up flex flex-wrap justify-center gap-x-7 gap-y-2 text-[0.92rem] text-white/85 [text-shadow:0_1px_10px_rgba(14,40,48,0.75)]"
           style={{ animationDelay: "320ms" }}
         >
           <li>Women-owned brands only</li>
