@@ -1,3 +1,4 @@
+import TypedText from "./TypedText";
 import Image from "next/image";
 import Link from "next/link";
 import Reveal from "./Reveal";
@@ -20,7 +21,7 @@ export function HomeIntro() {
         <Reveal from="right" delay={150}>
           <p className="eyebrow">Hi there</p>
           <h2 className="mb-5 text-[clamp(1.7rem,3.5vw,2.6rem)] font-medium leading-[1.15] tracking-[-0.02em]">
-            I&apos;m your marketing partner.
+            <TypedText text="I'm your marketing partner." onView speed={45} startDelay={200} />
           </h2>
           <div className="space-y-4 text-[1.08rem] leading-relaxed text-ink-soft">
             <p>
@@ -64,7 +65,7 @@ export function HomeBanner() {
       <Reveal from="zoom" className="container-x">
         <div className="rounded-card bg-[linear-gradient(160deg,#2a525e,#1d3a42)] px-8 py-14 text-center text-white md:px-16">
           <h2 className="text-[clamp(1.6rem,3.4vw,2.4rem)] font-medium leading-[1.2] tracking-[-0.01em] text-white">
-            Let&apos;s give your brand a voice.
+            <TypedText text="Let's give your brand a voice." onView speed={45} startDelay={200} />
           </h2>
           <p className="mx-auto mt-4 max-w-[46ch] text-[1.05rem] text-[#aab4d4]">
             Book a free 30-minute call. No pressure, no jargon, just a real

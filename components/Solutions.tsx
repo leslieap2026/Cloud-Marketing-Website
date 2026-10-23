@@ -1,3 +1,4 @@
+import TypedText from "./TypedText";
 import Reveal from "./Reveal";
 
 export default function Solutions() {
@@ -7,7 +8,7 @@ export default function Solutions() {
         <Reveal className="mx-auto max-w-[760px] text-center">
           <p className="eyebrow">My story</p>
           <h2 className="mb-8 text-[clamp(1.9rem,4vw,3rem)] font-medium leading-[1.12] tracking-[-0.02em]">
-            Built for women who build.
+            <TypedText text="Built for women who build." onView speed={45} startDelay={200} />
           </h2>
           <div className="space-y-5 text-[1.12rem] leading-relaxed text-ink-soft">
             <p>

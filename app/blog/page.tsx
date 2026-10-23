@@ -1,3 +1,4 @@
+import TypedText from "@/components/TypedText";
 import type { Metadata } from "next";
 import Reveal from "@/components/Reveal";
 import CTA from "@/components/CTA";
@@ -15,7 +16,7 @@ export default function BlogPage() {
           <Reveal className="mx-auto max-w-[640px] text-center">
             <p className="eyebrow">Blog</p>
             <h1 className="mb-4 text-[clamp(1.9rem,4vw,3rem)] font-medium leading-[1.12] tracking-[-0.02em]">
-              Notes from the cloud
+              <TypedText text="Notes from the cloud" onView speed={45} startDelay={200} />
             </h1>
             <p className="section-sub">
               I&apos;m putting together my first posts on websites, social media,

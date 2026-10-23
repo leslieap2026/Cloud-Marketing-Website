@@ -1,5 +1,6 @@
 "use client";
 
+import TypedText from "./TypedText";
 import { useState, FormEvent } from "react";
 import Reveal from "./Reveal";
 
@@ -31,7 +32,7 @@ export default function CTA() {
         <Reveal>
           <p className="eyebrow">Get in touch</p>
           <h2 className="mb-3 text-[clamp(1.9rem,4vw,3rem)] font-medium tracking-[-0.02em] text-white">
-            Let&apos;s give your brand a voice.
+            <TypedText text="Let's give your brand a voice." onView speed={45} startDelay={200} />
           </h2>
           <p className="max-w-[42ch] text-[1.12rem] leading-relaxed text-[#aab4d4]">
             Book a free 30-minute call with me. We&apos;ll talk through your
