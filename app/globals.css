@@ -117,7 +117,7 @@ html {
 }
 /* Home hero: a deep teal-blue sky (matches the brand teal) that softens toward the horizon */
 .hero-sky {
-  background: linear-gradient(180deg, #163842 0%, #1f5566 36%, #3f8aa3 70%, #a3d6e3 100%);
+  background: linear-gradient(180deg, #1c5363 0%, #2a7d93 36%, #52aac2 70%, #b8e6f0 100%);
 }
 .hero-clouds .cloud {
   position: absolute;
@@ -155,9 +155,18 @@ html {
   opacity: 0;
   transform: translateY(22px);
   transition:
-    opacity 0.7s cubic-bezier(0.21, 0.6, 0.35, 1),
-    transform 0.7s cubic-bezier(0.21, 0.6, 0.35, 1);
+    opacity 0.9s cubic-bezier(0.21, 0.6, 0.35, 1),
+    transform 0.9s cubic-bezier(0.21, 0.6, 0.35, 1);
   will-change: opacity, transform;
+}
+.reveal-left {
+  transform: translateX(-60px);
+}
+.reveal-right {
+  transform: translateX(60px);
+}
+.reveal-zoom {
+  transform: translateY(30px) scale(0.96);
 }
 .reveal.is-visible {
   opacity: 1;

@@ -5,9 +5,9 @@ import Reveal from "./Reveal";
 
 export function HomeIntro() {
   return (
-    <section className="section">
+    <section className="section overflow-hidden">
       <div className="container-x grid items-center gap-12 max-[900px]:grid-cols-1 min-[901px]:grid-cols-[1fr_1.3fr]">
-        <Reveal>
+        <Reveal from="left">
           <Image
             src="/home-workspace.jpg"
             alt="Laptops, phones and notebooks around a table during a marketing planning session"
@@ -17,7 +17,7 @@ export function HomeIntro() {
             className="mx-auto aspect-[4/5] w-full max-w-[400px] rounded-card object-cover shadow-card"
           />
         </Reveal>
-        <Reveal delay={120}>
+        <Reveal from="right" delay={150}>
           <p className="eyebrow">Hi there</p>
           <h2 className="mb-5 text-[clamp(1.7rem,3.5vw,2.6rem)] font-medium leading-[1.15] tracking-[-0.02em]">
             I&apos;m your marketing partner.
@@ -42,7 +42,7 @@ export function HomeIntro() {
 export function HomeQuote() {
   return (
     <section className="section">
-      <Reveal className="container-x mx-auto max-w-[760px] text-center">
+      <Reveal from="up" className="container-x mx-auto max-w-[760px] text-center">
         <blockquote className="text-[clamp(1.3rem,2.6vw,1.8rem)] font-medium leading-[1.35] tracking-[-0.01em] text-ink">
           &ldquo;Within six months our inbound leads tripled and we finally had a
           brand that felt like us. It&apos;s the best investment we&apos;ve made.&rdquo;
@@ -61,7 +61,7 @@ export function HomeQuote() {
 export function HomeBanner() {
   return (
     <section className="pb-[104px] max-[720px]:pb-20">
-      <Reveal className="container-x">
+      <Reveal from="zoom" className="container-x">
         <div className="rounded-card bg-[linear-gradient(160deg,#2a525e,#1d3a42)] px-8 py-14 text-center text-white md:px-16">
           <h2 className="text-[clamp(1.6rem,3.4vw,2.4rem)] font-medium leading-[1.2] tracking-[-0.01em] text-white">
             Let&apos;s give your brand a voice.

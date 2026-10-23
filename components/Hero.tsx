@@ -17,7 +17,7 @@ export default function Hero() {
 
       {/* Deepens the top so the headline stays crisp */}
       <div
-        className="absolute inset-0 z-[1] bg-[linear-gradient(180deg,rgba(14,40,48,0.45),rgba(14,40,48,0)_60%)]"
+        className="absolute inset-0 z-[1] bg-[linear-gradient(180deg,rgba(14,40,48,0.35),rgba(14,40,48,0)_60%)]"
         aria-hidden="true"
       />
 
