@@ -198,7 +198,8 @@ html {
   transform-origin: left;
   transition: transform 0.25s ease;
 }
-.nav-link:hover::after {
+.nav-link:hover::after,
+.nav-link[aria-current="page"]::after {
   transform: scaleX(1);
 }
 

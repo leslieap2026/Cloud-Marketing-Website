@@ -43,9 +43,7 @@ export default function Header() {
               key={l.href}
               href={l.href}
               aria-current={pathname === l.href ? "page" : undefined}
-              className={`nav-link font-medium no-underline hover:text-white ${
-                pathname === l.href ? "text-white" : "text-[#c5ccd4]"
-              }`}
+              className="nav-link font-medium text-white no-underline"
             >
               {l.label}
             </Link>
@@ -80,7 +78,7 @@ export default function Header() {
               href={l.href}
               onClick={close}
               aria-current={pathname === l.href ? "page" : undefined}
-              className={`py-3 font-medium no-underline ${pathname === l.href ? "text-white" : "text-[#c5ccd4]"}`}
+              className="py-3 font-medium text-white no-underline"
             >
               {l.label}
             </Link>
