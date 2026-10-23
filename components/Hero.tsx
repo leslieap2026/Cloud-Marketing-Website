@@ -3,23 +3,17 @@ import TypedText from "./TypedText";
 export default function Hero() {
   return (
     <section className="hero-sky relative flex min-h-[calc(100svh-68px)] items-center overflow-hidden py-24 text-white">
-      {/* City skyline that fades in, tinted with the same teal-blue as the sky */}
+      {/* The whole skyline photo, its own sky included, fades in behind the text */}
       <img
         src="/hero-skyline.jpg"
         alt=""
         aria-hidden="true"
-        className="hero-photo absolute inset-x-0 bottom-0 z-0 h-[58%] w-full object-cover object-bottom"
+        className="hero-photo absolute inset-0 z-0 h-full w-full object-cover object-bottom"
       />
 
-      {/* Soft drifting clouds */}
-      <div className="hero-clouds absolute inset-0 z-0" aria-hidden="true">
-        <span className="cloud cloud-3" />
-        <span className="cloud cloud-4" />
-      </div>
-
-      {/* Deepens the top so the headline stays crisp */}
+      {/* Gentle teal shade so the text reads over the buildings */}
       <div
-        className="absolute inset-0 z-[1] bg-[linear-gradient(180deg,rgba(14,40,48,0.35),rgba(14,40,48,0)_60%)]"
+        className="absolute inset-0 z-[1] bg-[radial-gradient(ellipse_70%_60%_at_50%_50%,rgba(14,40,48,0.45),rgba(14,40,48,0.15)_75%),linear-gradient(180deg,rgba(14,40,48,0.25),rgba(14,40,48,0)_40%,rgba(14,40,48,0.35))]"
         aria-hidden="true"
       />
 
@@ -58,9 +52,9 @@ export default function Hero() {
           style={{ animationDelay: "320ms" }}
         >
           <li>Women-owned brands only</li>
-          <li aria-hidden="true">·</li>
+          <li aria-hidden="true" className="hidden sm:block">·</li>
           <li>Based in Charlotte, working anywhere</li>
-          <li aria-hidden="true">·</li>
+          <li aria-hidden="true" className="hidden sm:block">·</li>
           <li>One person, start to finish</li>
         </ul>
       </div>

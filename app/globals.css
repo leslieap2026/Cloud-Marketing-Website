@@ -122,15 +122,13 @@ html {
 .hero-photo {
   opacity: 0;
   transform: translateY(24px);
-  /* Natural colors, softened slightly; fades into the sky toward the top */
-  filter: blur(1px) brightness(1.08) saturate(1.1);
-  -webkit-mask-image: linear-gradient(to top, #000 45%, transparent 100%);
-  mask-image: linear-gradient(to top, #000 45%, transparent 100%);
+  /* The photo's own sky and natural colors, kept sharp */
+  filter: saturate(1.05);
   animation: heroPhotoIn 2.2s cubic-bezier(0.21, 0.6, 0.35, 1) 0.3s forwards;
 }
 @keyframes heroPhotoIn {
   to {
-    opacity: 0.85;
+    opacity: 1;
     transform: none;
   }
 }
@@ -249,6 +247,6 @@ html {
 
 @media (prefers-reduced-motion: reduce) {
   .hero-photo {
-    opacity: 0.85 !important;
+    opacity: 1 !important;
   }
 }
