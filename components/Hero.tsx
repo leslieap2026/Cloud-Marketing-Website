@@ -11,8 +11,11 @@ export default function Hero() {
         className="hero-photo absolute inset-x-0 bottom-0 z-0 h-[62%] w-full object-cover object-bottom"
       />
 
-      {/* Soft drifting cloud */}
+      {/* Soft drifting clouds, drifting over the base of the skyline */}
       <div className="hero-clouds absolute inset-0 z-0" aria-hidden="true">
+        <span className="cloud cloud-1" />
+        <span className="cloud cloud-2" />
+        <span className="cloud cloud-3" />
         <span className="cloud cloud-4" />
       </div>
 
