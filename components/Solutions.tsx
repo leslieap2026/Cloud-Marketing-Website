@@ -1,3 +1,4 @@
+import TypedText from "./TypedText";
 import Reveal from "./Reveal";
 
 export default function Solutions() {
@@ -5,9 +6,9 @@ export default function Solutions() {
     <section id="about" className="section">
       <div className="container-x">
         <Reveal className="mx-auto max-w-[760px] text-center">
-          <p className="eyebrow">Our why</p>
+          <p className="eyebrow">My story</p>
           <h2 className="mb-8 text-[clamp(1.9rem,4vw,3rem)] font-medium leading-[1.12] tracking-[-0.02em]">
-            Built for women who build.
+            <TypedText text="Built for women who build." onView speed={45} startDelay={200} />
           </h2>
           <div className="space-y-5 text-[1.12rem] leading-relaxed text-ink-soft">
             <p>
@@ -17,16 +18,27 @@ export default function Solutions() {
               as a woman is already an act of courage. It deserves to be seen.
             </p>
             <p>
-              Small businesses fail every day — not because the product isn&apos;t
+              Small businesses fail every day, not because the product isn&apos;t
               good enough, but because the world never found out about it. A great
               product sitting in silence is still a great product. It just needs a
-              voice. That is exactly what we provide.
+              voice. That&apos;s why I started Cloud Marketing.
             </p>
             <p>
-              We work exclusively with women-owned CPG brands because we understand
-              the unique weight of building in this space. We&apos;re not a
-              generalist agency trying to serve everyone — we&apos;re built for you,
-              specifically.
+              My own start in marketing came from making opportunities where
+              there weren&apos;t any. In college I couldn&apos;t land an
+              internship, so I stopped waiting for one. I reached out to people
+              who needed help, did the work, and found out how much I love
+              creating. That&apos;s still how I work today: hands-on, scrappy, and
+              all in on your brand.
+            </p>
+            <p>
+              Hiring a big agency is often expensive, and it doesn&apos;t
+              guarantee they&apos;ll get your vision. I&apos;m not an agency, and
+              I don&apos;t hand you off to a junior team. I&apos;m your marketing
+              partner. I work only with women-owned CPG brands because I
+              understand the weight of building in this space, and I&apos;d rather
+              go deep with a few founders than try to serve everyone. When you work
+              with me, you get me.
             </p>
           </div>
         </Reveal>

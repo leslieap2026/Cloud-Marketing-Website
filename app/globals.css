@@ -115,6 +115,64 @@ html {
   background-size: 300% 300%;
   animation: auroraShift 18s ease infinite;
 }
+/* Home hero: a deep teal-blue sky (matches the brand teal) that softens toward the horizon */
+.hero-sky {
+  background: linear-gradient(180deg, #236678 0%, #3592aa 36%, #63bdd3 70%, #c6edf5 100%);
+}
+.hero-photo {
+  opacity: 0;
+  transform: translateY(24px);
+  /* The photo's own sky, with its colors turned up */
+  filter: saturate(1.4) brightness(1.1) contrast(1.06);
+  animation: heroPhotoIn 2.2s cubic-bezier(0.21, 0.6, 0.35, 1) 0.3s forwards;
+}
+@keyframes heroPhotoIn {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Swoosh under the hero headline draws in after the typing finishes */
+.hero-swoosh path {
+  stroke-dasharray: 340;
+  stroke-dashoffset: 340;
+  animation: swooshDraw 0.9s cubic-bezier(0.65, 0, 0.35, 1) 2.3s forwards;
+}
+@keyframes swooshDraw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Bright call-to-action with a soft pulsing glow */
+.hero-cta {
+  background: linear-gradient(135deg, #0cc0df, #14a3c4);
+  box-shadow: 0 10px 30px -8px rgba(12, 192, 223, 0.7);
+  animation: ctaGlow 2.8s ease-in-out 3s infinite;
+}
+.hero-cta:hover {
+  background: linear-gradient(135deg, #22d3ee, #0cc0df);
+}
+@keyframes ctaGlow {
+  0%, 100% { box-shadow: 0 10px 30px -8px rgba(12, 192, 223, 0.7); }
+  50% { box-shadow: 0 10px 40px -4px rgba(255, 178, 122, 0.75); }
+}
+.hero-clouds .cloud {
+  position: absolute;
+  border-radius: 9999px;
+  background: radial-gradient(closest-side, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0));
+  filter: blur(6px);
+  animation: cloudDrift 60s linear infinite alternate;
+}
+.hero-clouds .cloud-1 { width: 70vw; height: 22vw; left: -20vw; bottom: -6vw; }
+.hero-clouds .cloud-2 { width: 55vw; height: 18vw; right: -18vw; bottom: 2vw; animation-duration: 75s; }
+.hero-clouds .cloud-3 { width: 40vw; height: 12vw; left: 30vw; bottom: -4vw; opacity: 0.8; animation-duration: 90s; }
+.hero-clouds .cloud-4 { width: 30vw; height: 9vw; left: 5vw; top: 14%; opacity: 0.35; animation-duration: 110s; }
+@keyframes cloudDrift {
+  from { transform: translateX(-3vw); }
+  to { transform: translateX(3vw); }
+}
 /* Subtle dot-grid texture overlay */
 .hero-grid {
   background-image: radial-gradient(rgba(21, 95, 176, 0.12) 1px, transparent 1px);
@@ -127,7 +185,7 @@ html {
   display: inline-block;
   margin-left: 1px;
   font-weight: 300;
-  color: #d6ecff;
+  color: #0cc0df;
   animation: caretBlink 1s step-end infinite;
 }
 
@@ -136,9 +194,18 @@ html {
   opacity: 0;
   transform: translateY(22px);
   transition:
-    opacity 0.7s cubic-bezier(0.21, 0.6, 0.35, 1),
-    transform 0.7s cubic-bezier(0.21, 0.6, 0.35, 1);
+    opacity 0.9s cubic-bezier(0.21, 0.6, 0.35, 1),
+    transform 0.9s cubic-bezier(0.21, 0.6, 0.35, 1);
   will-change: opacity, transform;
+}
+.reveal-left {
+  transform: translateX(-60px);
+}
+.reveal-right {
+  transform: translateX(60px);
+}
+.reveal-zoom {
+  transform: translateY(30px) scale(0.96);
 }
 .reveal.is-visible {
   opacity: 1;
@@ -179,7 +246,8 @@ html {
   transform-origin: left;
   transition: transform 0.25s ease;
 }
-.nav-link:hover::after {
+.nav-link:hover::after,
+.nav-link[aria-current="page"]::after {
   transform: scaleX(1);
 }
 
@@ -193,10 +261,23 @@ html {
   .orb-float-2,
   .bar,
   .hero-aurora,
+  .hero-photo,
+  .hero-swoosh path,
+  .hero-cta,
+  .hero-clouds .cloud,
   .typed-caret {
     animation: none !important;
     transition: none !important;
     opacity: 1 !important;
     transform: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-swoosh path {
+    stroke-dashoffset: 0 !important;
+  }
+  .hero-photo {
+    opacity: 1 !important;
   }
 }

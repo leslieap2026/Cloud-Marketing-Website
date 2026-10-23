@@ -2,64 +2,81 @@ import TypedText from "./TypedText";
 
 export default function Hero() {
   return (
-    <section className="hero-aurora relative overflow-hidden pb-24 pt-24 text-white">
-      {/* Background video — drop your clip in at public/hero.mp4 (muted, loops) */}
-      <video
-        className="absolute inset-0 z-0 h-full w-full object-cover"
-        autoPlay
-        muted
-        loop
-        playsInline
+    <section className="hero-sky relative flex min-h-[calc(100svh-68px)] items-center overflow-hidden py-24 text-white">
+      {/* The whole skyline photo, its own sky included, fades in behind the text */}
+      <img
+        src="/hero-skyline.jpg"
+        alt=""
         aria-hidden="true"
-      >
-        <source src="/hero.mp4" type="video/mp4" />
-        <source src="/hero.webm" type="video/webm" />
-      </video>
+        className="hero-photo absolute inset-0 z-0 h-full w-full object-cover object-bottom"
+      />
 
-      {/* Contrast scrim so the headline stays readable over the video */}
+      {/* Light shade behind the text, plus a warm golden-hour glow */}
       <div
-        className="absolute inset-0 z-[1] bg-[linear-gradient(180deg,rgba(8,20,45,0.55),rgba(8,20,45,0.28)_55%,rgba(8,20,45,0.5))]"
+        className="absolute inset-0 z-[1] bg-[radial-gradient(ellipse_65%_55%_at_50%_48%,rgba(14,40,48,0.4),rgba(14,40,48,0.05)_75%),radial-gradient(ellipse_60%_50%_at_85%_100%,rgba(255,168,92,0.28),transparent_70%),linear-gradient(180deg,rgba(14,40,48,0.15),rgba(14,40,48,0)_35%)]"
         aria-hidden="true"
       />
 
       <div className="container-x relative z-[2] flex flex-col items-center text-center">
-        <p className="anim-up mb-4 text-[0.78rem] font-bold uppercase tracking-[0.2em] text-white/85">
-          Marketing for women-owned CPG brands
+        <p className="anim-up mb-6 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/15 px-4 py-2 text-[0.78rem] font-bold uppercase tracking-[0.2em] text-white backdrop-blur-md">
+          <span className="text-[#ffc78f]" aria-hidden="true">✦</span>
+          Your marketing partner for women-owned CPG brands
         </p>
         <h1
-          className="anim-up font-display mx-auto mb-6 max-w-[18ch] text-[clamp(2.8rem,6.5vw,5rem)] font-semibold leading-[1.07] tracking-[-0.01em] text-white"
+          className="anim-up font-display mx-auto mb-4 max-w-[16ch] text-[clamp(3.2rem,8vw,6.4rem)] font-bold leading-[1.02] tracking-[-0.02em] text-white [text-shadow:0_4px_30px_rgba(14,40,48,0.35)]"
           style={{ animationDelay: "80ms" }}
         >
           <TypedText text="Your product deserves to be seen." speed={55} />
         </h1>
+        {/* Hand-drawn swoosh that draws itself once the headline is typed */}
+        <svg
+          className="hero-swoosh -mt-3 mb-6 h-5 w-[min(340px,60vw)]"
+          viewBox="0 0 340 20"
+          fill="none"
+          aria-hidden="true"
+        >
+          <defs>
+            <linearGradient id="swoosh" x1="0" x2="1">
+              <stop offset="0" stopColor="#0cc0df" />
+              <stop offset="1" stopColor="#ffb27a" />
+            </linearGradient>
+          </defs>
+          <path
+            d="M4 14 C 80 4, 180 2, 336 10"
+            stroke="url(#swoosh)"
+            strokeWidth="6"
+            strokeLinecap="round"
+          />
+        </svg>
         <p
-          className="anim-up mx-auto max-w-[52ch] text-[1.2rem] leading-relaxed text-white/85"
+          className="anim-up mx-auto max-w-[52ch] text-[1.2rem] leading-relaxed text-white/90 [text-shadow:0_1px_10px_rgba(14,40,48,0.75)]"
           style={{ animationDelay: "160ms" }}
         >
-          Cloud Marketing is a studio built exclusively for women-owned brands in
-          consumer products. We blend social media and email into one cohesive
-          strategy — so the right people finally discover what you&apos;ve made.
+          I&apos;m a freelance marketer who understands what small brands need.
+          From websites to social media, I start with strategy so the right
+          people finally discover what you&apos;ve made, without the agency
+          price tag.
         </p>
         <div
           className="anim-up my-8 flex flex-wrap justify-center gap-3.5"
           style={{ animationDelay: "240ms" }}
         >
-          <a href="#contact" className="btn bg-white text-ink shadow-soft hover:bg-white">
-            Book a free strategy call
+          <a href="/contact" className="btn hero-cta text-white">
+            Book a free call with me
           </a>
-          <a href="#about" className="btn border-white/60 bg-transparent text-white hover:bg-white/10">
-            Our story
+          <a href="/about" className="btn border-white/60 bg-transparent text-white hover:bg-white/10">
+            My story
           </a>
         </div>
         <ul
-          className="anim-up flex flex-wrap justify-center gap-x-7 gap-y-2 text-[0.92rem] text-white/80"
+          className="anim-up flex flex-wrap justify-center gap-x-7 gap-y-2 text-[0.92rem] text-white/85 [text-shadow:0_1px_10px_rgba(14,40,48,0.75)]"
           style={{ animationDelay: "320ms" }}
         >
-          <li>Women-owned, exclusively</li>
-          <li aria-hidden="true">·</li>
-          <li>Social + email, in sync</li>
-          <li aria-hidden="true">·</li>
-          <li>Strategy built for you</li>
+          <li>Women-owned brands only</li>
+          <li aria-hidden="true" className="hidden sm:block">·</li>
+          <li>Based in Charlotte, working anywhere</li>
+          <li aria-hidden="true" className="hidden sm:block">·</li>
+          <li>One person, start to finish</li>
         </ul>
       </div>
     </section>

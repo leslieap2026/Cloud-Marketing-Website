@@ -7,6 +7,8 @@ type RevealProps = {
   className?: string;
   /** Stagger delay in milliseconds. */
   delay?: number;
+  /** Direction the content slides in from. Defaults to a short rise. */
+  from?: "up" | "left" | "right" | "zoom";
 };
 
 /**
@@ -15,7 +17,7 @@ type RevealProps = {
  * isn't available, and is disabled entirely under prefers-reduced-motion
  * (handled in globals.css).
  */
-export default function Reveal({ children, className = "", delay = 0 }: RevealProps) {
+export default function Reveal({ children, className = "", delay = 0, from = "up" }: RevealProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
 
@@ -47,7 +49,7 @@ export default function Reveal({ children, className = "", delay = 0 }: RevealPr
   return (
     <div
       ref={ref}
-      className={`reveal ${visible ? "is-visible" : ""} ${className}`.trim()}
+      className={`reveal reveal-${from} ${visible ? "is-visible" : ""} ${className}`.trim()}
       style={delay ? { transitionDelay: `${delay}ms` } : undefined}
     >
       {children}
