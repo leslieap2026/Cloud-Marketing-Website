@@ -11,22 +11,43 @@ export default function Hero() {
         className="hero-photo absolute inset-0 z-0 h-full w-full object-cover object-bottom"
       />
 
-      {/* Gentle teal shade so the text reads over the buildings */}
+      {/* Light shade behind the text, plus a warm golden-hour glow */}
       <div
-        className="absolute inset-0 z-[1] bg-[radial-gradient(ellipse_70%_60%_at_50%_50%,rgba(14,40,48,0.45),rgba(14,40,48,0.15)_75%),linear-gradient(180deg,rgba(14,40,48,0.25),rgba(14,40,48,0)_40%,rgba(14,40,48,0.35))]"
+        className="absolute inset-0 z-[1] bg-[radial-gradient(ellipse_65%_55%_at_50%_48%,rgba(14,40,48,0.4),rgba(14,40,48,0.05)_75%),radial-gradient(ellipse_60%_50%_at_85%_100%,rgba(255,168,92,0.28),transparent_70%),linear-gradient(180deg,rgba(14,40,48,0.15),rgba(14,40,48,0)_35%)]"
         aria-hidden="true"
       />
 
       <div className="container-x relative z-[2] flex flex-col items-center text-center">
-        <p className="anim-up mb-5 text-[0.8rem] font-bold uppercase tracking-[0.22em] text-[#f6dcc0]">
+        <p className="anim-up mb-6 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/15 px-4 py-2 text-[0.78rem] font-bold uppercase tracking-[0.2em] text-white backdrop-blur-md">
+          <span className="text-[#ffc78f]" aria-hidden="true">✦</span>
           Your marketing partner for women-owned CPG brands
         </p>
         <h1
-          className="anim-up font-display mx-auto mb-6 max-w-[16ch] text-[clamp(3.2rem,8vw,6.4rem)] font-bold leading-[1.02] tracking-[-0.02em] text-white [text-shadow:0_4px_30px_rgba(14,40,48,0.35)]"
+          className="anim-up font-display mx-auto mb-4 max-w-[16ch] text-[clamp(3.2rem,8vw,6.4rem)] font-bold leading-[1.02] tracking-[-0.02em] text-white [text-shadow:0_4px_30px_rgba(14,40,48,0.35)]"
           style={{ animationDelay: "80ms" }}
         >
           <TypedText text="Your product deserves to be seen." speed={55} />
         </h1>
+        {/* Hand-drawn swoosh that draws itself once the headline is typed */}
+        <svg
+          className="hero-swoosh -mt-3 mb-6 h-5 w-[min(340px,60vw)]"
+          viewBox="0 0 340 20"
+          fill="none"
+          aria-hidden="true"
+        >
+          <defs>
+            <linearGradient id="swoosh" x1="0" x2="1">
+              <stop offset="0" stopColor="#0cc0df" />
+              <stop offset="1" stopColor="#ffb27a" />
+            </linearGradient>
+          </defs>
+          <path
+            d="M4 14 C 80 4, 180 2, 336 10"
+            stroke="url(#swoosh)"
+            strokeWidth="6"
+            strokeLinecap="round"
+          />
+        </svg>
         <p
           className="anim-up mx-auto max-w-[52ch] text-[1.2rem] leading-relaxed text-white/90 [text-shadow:0_1px_10px_rgba(14,40,48,0.75)]"
           style={{ animationDelay: "160ms" }}
@@ -40,7 +61,7 @@ export default function Hero() {
           className="anim-up my-8 flex flex-wrap justify-center gap-3.5"
           style={{ animationDelay: "240ms" }}
         >
-          <a href="/contact" className="btn bg-white text-ink shadow-soft hover:bg-white">
+          <a href="/contact" className="btn hero-cta text-white">
             Book a free call with me
           </a>
           <a href="/about" className="btn border-white/60 bg-transparent text-white hover:bg-white/10">
