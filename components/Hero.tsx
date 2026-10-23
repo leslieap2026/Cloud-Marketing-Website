@@ -17,7 +17,7 @@ export default function Hero() {
 
       {/* Deepens the top so the headline stays crisp */}
       <div
-        className="absolute inset-0 z-[1] bg-[linear-gradient(180deg,rgba(12,30,58,0.45),rgba(12,30,58,0)_60%)]"
+        className="absolute inset-0 z-[1] bg-[linear-gradient(180deg,rgba(14,40,48,0.45),rgba(14,40,48,0)_60%)]"
         aria-hidden="true"
       />
 
@@ -26,7 +26,7 @@ export default function Hero() {
           Your marketing partner for women-owned CPG brands
         </p>
         <h1
-          className="anim-up font-display mx-auto mb-6 max-w-[16ch] text-[clamp(3.2rem,8vw,6.4rem)] font-bold leading-[1.02] tracking-[-0.02em] text-white [text-shadow:0_4px_30px_rgba(12,30,58,0.35)]"
+          className="anim-up font-display mx-auto mb-6 max-w-[16ch] text-[clamp(3.2rem,8vw,6.4rem)] font-bold leading-[1.02] tracking-[-0.02em] text-white [text-shadow:0_4px_30px_rgba(14,40,48,0.35)]"
           style={{ animationDelay: "80ms" }}
         >
           <TypedText text="Your product deserves to be seen." speed={55} />

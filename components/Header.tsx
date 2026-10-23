@@ -19,7 +19,7 @@ export default function Header() {
   return (
     <header
       id="top"
-      className="sticky top-0 z-50 border-b border-white/10 bg-[#2b3036]/95 backdrop-blur-md"
+      className="sticky top-0 z-50 border-b border-white/10 bg-[#263238]/95 backdrop-blur-md"
     >
       <div className="container-x flex h-[68px] items-center justify-between">
         <Link href="/" className="flex items-center gap-2 font-heading text-[1.2rem] font-extrabold text-white no-underline">
@@ -69,7 +69,7 @@ export default function Header() {
       {/* Mobile menu */}
       {open && (
         <nav
-          className="flex flex-col gap-0 border-b border-white/10 bg-[#2b3036] px-6 pb-5 pt-3 shadow-card min-[721px]:hidden"
+          className="flex flex-col gap-0 border-b border-white/10 bg-[#263238] px-6 pb-5 pt-3 shadow-card min-[721px]:hidden"
           aria-label="Mobile"
         >
           {navLinks.map((l) => (

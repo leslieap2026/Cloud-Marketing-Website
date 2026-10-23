@@ -115,9 +115,9 @@ html {
   background-size: 300% 300%;
   animation: auroraShift 18s ease infinite;
 }
-/* Home hero: a deep evening-blue sky that softens toward the horizon */
+/* Home hero: a deep teal-blue sky (matches the brand teal) that softens toward the horizon */
 .hero-sky {
-  background: linear-gradient(180deg, #16304f 0%, #24507e 38%, #4f82b4 70%, #9fc3e3 100%);
+  background: linear-gradient(180deg, #163842 0%, #1f5566 36%, #3f8aa3 70%, #a3d6e3 100%);
 }
 .hero-clouds .cloud {
   position: absolute;
