@@ -11,7 +11,7 @@ const results = [
 const quotes = [
   {
     quote:
-      "Within six months our inbound leads tripled and we finally had a brand that felt like us. It's the best investment we've made.",
+      "It's truly been a pleasure working with Leslie.",
     initials: "BW",
     name: "Brittani Washington",
     role: "Brit Services Consulting LLC.",

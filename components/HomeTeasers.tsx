@@ -45,8 +45,7 @@ export function HomeQuote() {
     <section className="section">
       <Reveal from="up" className="container-x mx-auto max-w-[760px] text-center">
         <blockquote className="text-[clamp(1.3rem,2.6vw,1.8rem)] font-medium leading-[1.35] tracking-[-0.01em] text-ink">
-          &ldquo;Within six months our inbound leads tripled and we finally had a
-          brand that felt like us. It&apos;s the best investment we&apos;ve made.&rdquo;
+          &ldquo;It&apos;s truly been a pleasure working with Leslie.&rdquo;
         </blockquote>
         <p className="mt-6 text-[0.95rem] text-muted">
           <strong className="text-ink">Brittani Washington</strong>, Brit Services Consulting LLC.
