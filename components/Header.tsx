@@ -19,10 +19,10 @@ export default function Header() {
   return (
     <header
       id="top"
-      className="sticky top-0 z-50 border-b border-line bg-white/85 backdrop-blur-md"
+      className="sticky top-0 z-50 border-b border-white/10 bg-[#2b3036]/95 backdrop-blur-md"
     >
       <div className="container-x flex h-[68px] items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 font-heading text-[1.2rem] font-extrabold text-ink no-underline">
+        <Link href="/" className="flex items-center gap-2 font-heading text-[1.2rem] font-extrabold text-white no-underline">
           <span className="text-brand">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path
@@ -43,8 +43,8 @@ export default function Header() {
               key={l.href}
               href={l.href}
               aria-current={pathname === l.href ? "page" : undefined}
-              className={`nav-link font-medium no-underline hover:text-ink ${
-                pathname === l.href ? "text-ink" : "text-ink-soft"
+              className={`nav-link font-medium no-underline hover:text-white ${
+                pathname === l.href ? "text-white" : "text-[#c5ccd4]"
               }`}
             >
               {l.label}
@@ -62,16 +62,16 @@ export default function Header() {
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
         >
-          <span className="h-0.5 w-6 rounded bg-ink" />
-          <span className="h-0.5 w-6 rounded bg-ink" />
-          <span className="h-0.5 w-6 rounded bg-ink" />
+          <span className="h-0.5 w-6 rounded bg-white" />
+          <span className="h-0.5 w-6 rounded bg-white" />
+          <span className="h-0.5 w-6 rounded bg-white" />
         </button>
       </div>
 
       {/* Mobile menu */}
       {open && (
         <nav
-          className="flex flex-col gap-0 border-b border-line bg-surface px-6 pb-5 pt-3 shadow-card min-[721px]:hidden"
+          className="flex flex-col gap-0 border-b border-white/10 bg-[#2b3036] px-6 pb-5 pt-3 shadow-card min-[721px]:hidden"
           aria-label="Mobile"
         >
           {navLinks.map((l) => (
@@ -80,7 +80,7 @@ export default function Header() {
               href={l.href}
               onClick={close}
               aria-current={pathname === l.href ? "page" : undefined}
-              className={`py-3 font-medium no-underline ${pathname === l.href ? "text-ink" : "text-ink-soft"}`}
+              className={`py-3 font-medium no-underline ${pathname === l.href ? "text-white" : "text-[#c5ccd4]"}`}
             >
               {l.label}
             </Link>
