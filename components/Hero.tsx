@@ -3,15 +3,16 @@ import TypedText from "./TypedText";
 export default function Hero() {
   return (
     <section className="hero-sky relative flex min-h-[calc(100svh-68px)] items-center overflow-hidden py-24 text-white">
-      {/* Want a photo instead? Put it at public/hero.jpg and add
-          <img src="/hero.jpg" alt="" className="absolute inset-0 z-0 h-full w-full object-cover" />
-          here; the scrim below keeps the text readable. */}
+      {/* City skyline that fades in, tinted with the same teal-blue as the sky */}
+      <img
+        src="/hero-skyline.jpg"
+        alt=""
+        aria-hidden="true"
+        className="hero-photo absolute inset-x-0 bottom-0 z-0 h-[62%] w-full object-cover object-bottom"
+      />
 
-      {/* Soft drifting clouds */}
+      {/* Soft drifting cloud */}
       <div className="hero-clouds absolute inset-0 z-0" aria-hidden="true">
-        <span className="cloud cloud-1" />
-        <span className="cloud cloud-2" />
-        <span className="cloud cloud-3" />
         <span className="cloud cloud-4" />
       </div>
 

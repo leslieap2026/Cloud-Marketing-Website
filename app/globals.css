@@ -119,6 +119,21 @@ html {
 .hero-sky {
   background: linear-gradient(180deg, #236678 0%, #3592aa 36%, #63bdd3 70%, #c6edf5 100%);
 }
+.hero-photo {
+  opacity: 0;
+  transform: translateY(24px);
+  /* Takes on the sky's teal-blue and fades out toward the top */
+  mix-blend-mode: luminosity;
+  -webkit-mask-image: linear-gradient(to top, #000 35%, transparent 100%);
+  mask-image: linear-gradient(to top, #000 35%, transparent 100%);
+  animation: heroPhotoIn 2.2s cubic-bezier(0.21, 0.6, 0.35, 1) 0.3s forwards;
+}
+@keyframes heroPhotoIn {
+  to {
+    opacity: 0.55;
+    transform: none;
+  }
+}
 .hero-clouds .cloud {
   position: absolute;
   border-radius: 9999px;
@@ -222,11 +237,18 @@ html {
   .orb-float-2,
   .bar,
   .hero-aurora,
+  .hero-photo,
   .hero-clouds .cloud,
   .typed-caret {
     animation: none !important;
     transition: none !important;
     opacity: 1 !important;
     transform: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-photo {
+    opacity: 0.55 !important;
   }
 }
